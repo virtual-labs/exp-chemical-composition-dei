@@ -1,0 +1,52 @@
+.Mainstep{
+    visibility: visible;
+    z-index: 1000;
+}
+
+.circlebg{
+
+    position: absolute; 
+    top: 26px; 
+    left: 55px;
+}
+
+.incanvas{
+
+    position: absolute; top: 55px; left: -10px;font-size:15px;
+}
+
+.incanvas1{
+
+    position: absolute; top: 85px; left: 0px;font-size:14px;
+}
+
+.incanvas2{
+
+    position: absolute; top: 115px; left: 0px;font-size:15px;
+}
+
+.incanvas3{
+
+    position: absolute; top: 145px; left: 0px;font-size:14px;
+}
+
+.incanvas4{
+    position: absolute; top: 30px; left: 0px;font-size:15px;
+}
+
+
+
+
+.button{
+
+    position:absolute; 
+    left:680px; 
+    top:490px; 
+    text-align: center;
+    cursor:pointer; 
+    font-size: 11px; 
+    background-color: #2150a0; 
+    padding-top: 6px; 
+    color: #FFF; 
+    padding-bottom: 5px;
+}
