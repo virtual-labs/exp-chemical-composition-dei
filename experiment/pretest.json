@@ -2,38 +2,158 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which oxide in cement is primarily responsible for strength development?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Fe₂O₃",
+        "b": "Al₂O₃",
+        "c": "CaO",
+        "d": "MgO"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Calcium oxide (CaO) reacts with water to form hydration compounds responsible for strength development in cement."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the role of SO₃ in cement composition?",
+      "answers": {
+        "a": "Enhances early strength",
+        "b": "Prevents flash setting",
+        "c": "Increases workability",
+        "d": "Improves color"
+      },
+      "explanations": {
+        "b": "SO₃ (Sulfur Trioxide) helps prevent flash setting, which occurs due to the rapid hydration of C₃A (Tricalcium Aluminate)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which oxide in cement contributes to early strength and lowers clinkering temperature?",
+      "answers": {
+        "a": "SiO₂",
+        "b": "Al₂O₃",
+        "c": "Fe₂O₃",
+        "d": "MgO"
+      },
+      "explanations": {
+        "b": "Al₂O₃ (Alumina) reduces the clinkering temperature and promotes early strength development in cement."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which oxide helps in preventing alkali-silica reaction (ASR)?",
+      "answers": {
+        "a": "Na₂O",
+        "b": "K₂O",
+        "c": "SO₃",
+        "d": "Both a & b"
+      },
+      "explanations": {
+        "d": "Na₂O and K₂O (alkali oxides) react with silica in aggregates, causing ASR. Controlling their content prevents this reaction."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the main function of Fe₂O₃ in cement?",
+      "answers": {
+        "a": "Enhances strength",
+        "b": "Controls setting time",
+        "c": "Assists in clinker formation and impacts color",
+        "d": "Prevents expansion"
+      },
+      "explanations": {
+        "c": "Fe₂O₃ (Iron Oxide) helps in clinker formation and gives cement its characteristic gray color."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of adding ammonium oxalate ((NH₄)₂C₂O₄) during the determination of CaO?",
+      "answers": {
+        "a": "To precipitate calcium oxalate",
+        "b": "To dissolve calcium",
+        "c": "To remove impurities",
+        "d": "To neutralize the solution"
+      },
+      "explanations": {
+        "a": "Ammonium oxalate is used to precipitate calcium as calcium oxalate, which is further analyzed for CaO content."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is nitric acid (HNO₃) used in the determination of SiO₂ in cement?",
+      "answers": {
+        "a": "To dissolve calcium oxide",
+        "b": "To enhance filtration",
+        "c": "To acidify the solution and convert silica into insoluble form",
+        "d": "To precipitate iron oxide"
+      },
+      "explanations": {
+        "c": "Nitric acid acidifies the solution and helps convert silica (SiO₂) into an insoluble form for precise determination."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the key method for determining the percentage of Fe₂O₃ in cement?",
+      "answers": {
+        "a": "Titration using KMnO₄",
+        "b": "Gravimetric analysis",
+        "c": "Filtration and drying",
+        "d": "Spectrophotometry"
+      },
+      "explanations": {
+        "a": "Titration using KMnO₄ (Potassium Permanganate) is commonly used for Fe₂O₃ determination due to its oxidizing properties."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What compound is precipitated to determine the MgO content in cement?",
+      "answers": {
+        "a": "Magnesium hydroxide",
+        "b": "Magnesium ammonium phosphate (MgNH₄PO₄)",
+        "c": "Magnesium sulfate",
+        "d": "Magnesium carbonate"
+      },
+      "explanations": {
+        "b": "Magnesium ammonium phosphate (MgNH₄PO₄) is the compound formed and precipitated for MgO content determination."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the function of tetracalcium aluminoferrite (C₄AF) in cement?",
+      "answers": {
+        "a": "Increases strength significantly",
+        "b": "Improves workability but contributes minimal strength",
+        "c": "Reduces hydration heat",
+        "d": "Prevents sulfate attack"
+      },
+      "explanations": {
+        "b": "C₄AF (Tetracalcium Aluminoferrite) mainly improves workability and has a minor role in strength development."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the main reason for using low-heat cement in mass concrete structures?",
+      "answers": {
+        "a": "It prevents rapid strength gain",
+        "b": "It reduces the risk of thermal cracking",
+        "c": "It increases hydration rate",
+        "d": "It improves alkali resistance"
+      },
+      "explanations": {
+        "b": "Low-heat cement generates less heat during hydration, reducing the risk of thermal cracking in large structures."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
