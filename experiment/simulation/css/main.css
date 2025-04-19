@@ -1,1 +1,72 @@
 /* You CSS goes in here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6eef2;
+}
+
+.header {
+    background-color: #0088ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.objective, .instruments {
+    margin-bottom: 20px;
+}
+
+.objective h2, .instruments h2 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+.objective p, .instruments p {
+    display: inline;
+    font-size: 1.2em;
+}
+
+.tools-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.tools-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.start-button {
+    text-align: right;
+    margin: 20px 0;
+}
+
+#start-experiment {
+    background-color: #0088ff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#start-experiment:hover {
+    background-color: #0066cc;
+}
