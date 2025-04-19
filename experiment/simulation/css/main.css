@@ -4,67 +4,69 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e6eef2;
+    font-size: 14px; /* Base font size reduced */
 }
 
 .header {
     background-color: #0088ff;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-bottom: 20px;
+    padding: 10px 0; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
 }
 
 .header h1 {
     margin: 0;
+    font-size: 1.8em; /* Smaller heading */
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 900px; /* Slightly reduced max width */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px; /* Reduced padding */
 }
 
 .objective, .instruments {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin */
 }
 
 .objective h2, .instruments h2 {
-    font-size: 1.4em;
-    margin-bottom: 5px;
+    font-size: 1.2em; /* Smaller heading */
+    margin-bottom: 3px; /* Reduced margin */
     display: inline;
 }
 
 .objective p, .instruments p {
     display: inline;
-    font-size: 1.2em;
+    font-size: 1em; /* Reduced font size */
 }
 
 .tools-container {
     text-align: center;
-    margin: 40px 0;
+    margin: 25px 0; /* Reduced margin */
 }
 
 .tools-image {
-    max-width: 100%;
+    max-width: 90%; /* Slightly smaller image */
     height: auto;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     background-color: #f9f9f9;
 }
 
 .start-button {
     text-align: right;
-    margin: 20px 0;
+    margin: 15px 0; /* Reduced margin */
 }
 
 #start-experiment {
     background-color: #0088ff;
     color: white;
     border: none;
-    padding: 10px 30px;
-    font-size: 1.2em;
+    padding: 8px 20px; /* Reduced padding */
+    font-size: 1em; /* Smaller font size */
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 3px; /* Smaller border radius */
 }
 
 #start-experiment:hover {

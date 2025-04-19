@@ -1,0 +1,69 @@
+/* CSS for Step 1 of the Chemical Composition of Cement experiment */
+
+.step-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.step-header {
+    background-color: #0088ff;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.step-header h2 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.step-content {
+    margin-bottom: 20px;
+}
+
+.step-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.step-image {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.step-image img {
+    max-width: 85%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: #f9f9f9;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 7px 12px;
+    background-color: #0088ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.navigation button:hover {
+    background-color: #0066cc;
+}
