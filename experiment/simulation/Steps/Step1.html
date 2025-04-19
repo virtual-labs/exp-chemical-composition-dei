@@ -19,15 +19,25 @@
             <h3>About this step:</h3>
             <p>In this step, we will prepare the cement sample for chemical analysis. This involves grinding the cement sample to a fine powder and ensuring it is properly dried and stored to prevent contamination.</p>
             <p>Proper sample preparation is critical for accurate determination of the chemical composition of cement.</p>
+            <p class="instruction">Click on the cement sack to begin sample preparation.</p>
         </div>
 
         <div class="step-image">
-            <img src="../images/1.png" alt="Sample Preparation for Chemical Analysis">
+            <div class="image-container">
+                <img id="static-image" src="../images/1.png" alt="Sample Preparation for Chemical Analysis">
+                <img id="animation-gif" class="hidden" src="../images/1.gif" alt="Sample Preparation Animation">
+                
+                <!-- Transparent clickable area positioned over the sack -->
+                <div id="sack-clickable" class="clickable-area"></div>
+                
+                <!-- Arrow pointing to the clickable area -->
+                <div id="click-arrow" class="click-arrow">👇</div>
+            </div>
         </div>
 
         <div class="navigation">
             <button>Back to Home</button>
-            <button id="next-step">Next Step</button>
+            <button id="next-step" class="hidden">Next Step</button>
         </div>
     </div>
 
