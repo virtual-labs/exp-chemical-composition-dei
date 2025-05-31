@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/step3.css">
+    <title>Chemical Composition of Cement - Step 3</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Chemical Composition of Cement</h1>
+    </div>
+
+    <div class="step-container">
+        <div class="step-header">
+            <h2>Step 3: Sample Transfer</h2>
+        </div>
+
+        <div class="step-content">
+            <h3>About this step:</h3>
+            <p>In this step, we will carefully transfer the weighed cement sample from the weighing container to a clean beaker. This transfer must be done carefully to avoid any loss of sample material.</p>
+            <p>The sample should be transferred completely using appropriate techniques such as rinsing the weighing container with a small amount of distilled water to ensure all sample particles are collected in the beaker. Proper sample transfer is crucial to maintain the accuracy of our quantitative analysis.</p>
+            <p class="instruction">Click on the sample to transfer it to the beaker.</p>
+        </div>
+
+        <div class="step-image">
+            <div class="image-container">
+                <img id="static-image" src="../images/3.png" alt="Transferring Sample to Beaker">
+                <img id="animation-gif" class="hidden" src="../images/3.gif" alt="Sample Transfer Animation">
+                
+                <!-- Transparent clickable area positioned over the equipment -->
+                <div id="equipment-clickable" class="clickable-area"></div>
+                
+                <!-- Arrow pointing to the clickable area -->
+                <div id="click-arrow" class="click-arrow">👇</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prev-step">Previous Step</button>
+            <button id="next-step" class="hidden">Next Step</button>
+        </div>
+    </div>
+
+    <script src="../js/step3.js"></script>
+</body>
+</html>
