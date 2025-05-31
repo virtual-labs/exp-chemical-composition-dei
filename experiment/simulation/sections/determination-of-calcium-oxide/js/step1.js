@@ -1,180 +1,80 @@
-// JavaScript for Step 1: Adding Ammonium Hydroxide for CaO Determination
+// JavaScript for Step 1 of Determination of Calcium Oxide (CaO)
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get DOM elements
+    // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
     const animationGif = document.getElementById('animation-gif');
     const equipmentClickable = document.getElementById('equipment-clickable');
-    const nextButton = document.getElementById('next-step');
-    const prevButton = document.getElementById('prev-step');
+    const clickArrow = document.getElementById('click-arrow');
+    const nextStepButton = document.getElementById('next-step');
     
-    // Step state variables
-    let stepCompleted = false;
-    let additionCount = 0;
-    let currentPH = 7.0; // Starting neutral pH
-    const targetPH = 8.5; // Target slightly alkaline pH
+    // Set initial states
+    nextStepButton.classList.add('hidden'); // Initially hide the next button
     
-    // Create pH indicator and feedback elements
-    createUIElements();
-    
-    // Event listeners
-    equipmentClickable.addEventListener('click', handleNH4OHAddition);
-    nextButton.addEventListener('click', proceedToNextStep);
-    
-    function createUIElements() {
-        // Create pH indicator display
-        const phIndicator = document.createElement('div');
-        phIndicator.innerHTML = `
-            <div style="text-align: center; margin: 15px 0;">
-                <h4>Solution pH Monitor:</h4>
-                <div id="ph-display" class="ph-indicator ph-neutral">pH: ${currentPH.toFixed(1)}</div>
-                <div id="feedback-message"></div>
-                <div id="addition-counter" style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                    NH₄OH drops added: <span id="drop-count">0</span>
-                </div>
-            </div>
-        `;
-        
-        // Insert pH indicator after step content
-        const stepContent = document.querySelector('.step-content');
-        stepContent.appendChild(phIndicator);
+    // Position the clickable area over the NH4OH bottle on the image
+    // These values will need to be adjusted based on the actual image
+    function positionClickableElements() {
+        // Wait for the image to load to get its dimensions
+        if (staticImage.complete) {
+            setupClickableArea();
+        } else {
+            staticImage.onload = setupClickableArea;
+        }
     }
     
-    function handleNH4OHAddition() {
-        if (stepCompleted) {
-            showFeedback('Step already completed! Solution is at optimal pH.', 'success');
-            return;
-        }
+    function setupClickableArea() {
+        const imgWidth = staticImage.offsetWidth;
+        const imgHeight = staticImage.offsetHeight;
         
-        // Show animation
-        staticImage.style.display = 'none';
-        animationGif.style.display = 'block';
+        // Position clickable area over the NH4OH bottle (adjust these values as needed)
+        // These are approximate values - you'll need to adjust them based on where the bottle is in your image
+        equipmentClickable.style.left = imgWidth * 0.87 + 'px'; // 15% from the left
+        equipmentClickable.style.top = imgHeight * 0.05 + 'px'; // 20% from the top
+        equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
+        equipmentClickable.style.height = imgHeight * 0.40 + 'px'; // 40% of image height
+        
+        // Position the arrow to point to the clickable area
+        clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
+        clickArrow.style.top = (parseFloat(equipmentClickable.style.top) - 30) + 'px'; // Position above the clickable area
+    }
+    
+    // Call the positioning function
+    positionClickableElements();
+    
+    // Handle window resize to reposition elements
+    window.addEventListener('resize', positionClickableElements);
+    
+    // Add click event listener to the clickable area
+    equipmentClickable.addEventListener('click', function() {
+        // Hide the static image and clickable elements
+        staticImage.classList.add('hidden');
+        equipmentClickable.classList.add('hidden');
+        clickArrow.classList.add('hidden');
+        
+        // Show the animation GIF
         animationGif.classList.remove('hidden');
         
-        // Simulate adding NH4OH drops
-        additionCount++;
-        currentPH += 0.3; // Each click increases pH by 0.3
+        // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
+        const gifDuration = 9000; // 5 seconds - replace with actual duration of your GIF
         
-        // Update UI
-        updatePHDisplay();
-        updateDropCounter();
-        
-        // Check if target pH is reached
-        setTimeout(() => {
-            staticImage.style.display = 'block';
-            animationGif.style.display = 'none';
-            animationGif.classList.add('hidden');
-            
-            checkStepCompletion();
-        }, 2000);
-    }
-    
-    function updatePHDisplay() {
-        const phDisplay = document.getElementById('ph-display');
-        const phValue = Math.min(currentPH, 9.5); // Cap at 9.5 to avoid over-alkaline
-        
-        phDisplay.textContent = `pH: ${phValue.toFixed(1)}`;
-        
-        // Update pH indicator styling
-        phDisplay.className = 'ph-indicator';
-        if (phValue < 7.5) {
-            phDisplay.classList.add('ph-neutral');
-        } else if (phValue >= 8.0 && phValue <= 9.0) {
-            phDisplay.classList.add('ph-alkaline');
-        } else if (phValue > 9.0) {
-            phDisplay.classList.add('ph-alkaline');
-            phDisplay.style.backgroundColor = '#ffcdd2';
-            phDisplay.style.color = '#d32f2f';
-            phDisplay.style.borderColor = '#f44336';
-        } else {
-            phDisplay.classList.add('ph-neutral');
-        }
-    }
-    
-    function updateDropCounter() {
-        const dropCount = document.getElementById('drop-count');
-        dropCount.textContent = additionCount;
-    }
-    
-    function checkStepCompletion() {
-        const phValue = Math.min(currentPH, 9.5);
-        
-        if (phValue >= 8.0 && phValue <= 9.0) {
-            // Perfect pH range achieved
-            stepCompleted = true;
-            showFeedback('Excellent! Solution is now slightly alkaline (pH 8-9). Ready for next step.', 'success');
-            nextButton.disabled = false;
-            nextButton.style.backgroundColor = '#28a745';
-            
-            // Mark step as completed
-            document.querySelector('.step-container').classList.add('step-completed');
-            
-        } else if (phValue < 8.0) {
-            // Still too acidic
-            showFeedback('Solution is still not alkaline enough. Continue adding NH₄OH dropwise.', 'warning');
-            
-        } else if (phValue > 9.0) {
-            // Too alkaline
-            showFeedback('Warning: Solution is becoming too alkaline! This may affect the analysis.', 'error');
-            
-            if (phValue > 9.5) {
-                showFeedback('Solution is now too alkaline. This step needs to be restarted for accurate results.', 'error');
-                // Disable further additions
-                equipmentClickable.style.pointerEvents = 'none';
-                equipmentClickable.style.opacity = '0.5';
-            }
-        }
-    }
-    
-    function showFeedback(message, type) {
-        const feedbackElement = document.getElementById('feedback-message');
-        feedbackElement.textContent = message;
-        feedbackElement.className = `feedback-message feedback-${type}`;
-        
-        // Auto-hide warning and error messages after 5 seconds
-        if (type !== 'success') {
-            setTimeout(() => {
-                feedbackElement.textContent = '';
-                feedbackElement.className = '';
-            }, 5000);
-        }
-    }
-    
-    function proceedToNextStep() {
-        if (stepCompleted) {
-            // Navigate to next step
-            window.location.href = 'Step2.html';
-        }
-    }
-    
-    // Initialize pH display
-    updatePHDisplay();
-    updateDropCounter();
-    
-    // Add hover effects for better UX
-    equipmentClickable.addEventListener('mouseenter', function() {
-        if (!stepCompleted) {
-            this.style.backgroundColor = 'rgba(40, 167, 69, 0.2)';
-            this.style.borderColor = '#28a745';
-        }
+        // After the GIF animation completes, show the next step button
+        setTimeout(function() {
+            nextStepButton.classList.remove('hidden');
+        }, gifDuration);
     });
     
-    equipmentClickable.addEventListener('mouseleave', function() {
-        if (!stepCompleted) {
-            this.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
-            this.style.borderColor = 'transparent';
-        }
+    // Add click event listener for next-step button
+    nextStepButton.addEventListener('click', function() {
+        window.location.href = 'Step2.html';
     });
     
-    // Add educational tooltips
-    const tooltips = {
-        'equipment-clickable': 'Click to add NH₄OH dropwise. Monitor the pH to reach 8-9 range.'
-    };
+    // Get the back button (first button in navigation)
+    const backButton = document.querySelector('.navigation button:first-child');
     
-    Object.keys(tooltips).forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.title = tooltips[id];
-        }
-    });
+    // Add click event listener for back button
+    if (backButton) {
+        backButton.addEventListener('click', function() {
+            window.location.href = '../index.html';
+        });
+    }
 });

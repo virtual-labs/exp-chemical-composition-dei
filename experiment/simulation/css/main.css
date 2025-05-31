@@ -30,6 +30,10 @@ body {
     margin-bottom: 15px; /* Reduced margin */
 }
 
+.objective {
+    margin-top: 55px; /* Added space to move objective down */
+}
+
 .objective h2, .instruments h2 {
     font-size: 1.2em; /* Smaller heading */
     margin-bottom: 3px; /* Reduced margin */
