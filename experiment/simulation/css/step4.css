@@ -1,5 +1,23 @@
 /* CSS for Step 4 of the Chemical Composition of Cement experiment */
 
+.procedure-section {
+    background-color: #f8f9fa;
+    border: 2px solid #0088ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-header {
+    color: #0088ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .step-container {
     max-width: 700px;
     margin: 0 auto;
