@@ -1,8 +1,14 @@
 /* CSS for Step 1 of Determination of Calcium Oxide (CaO) */
 
+.step-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
 .procedure-section {
     background-color: #f8f9fa;
-    border: 2px solid #28a745;
+    border: 2px solid #0088ff;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
@@ -10,7 +16,7 @@
 }
 
 .section-header {
-    color: #28a745;
+    color: #0088ff;
     font-size: 1.2em;
     font-weight: bold;
     margin: 0;
@@ -18,14 +24,8 @@
     letter-spacing: 1px;
 }
 
-.step-container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
 .step-header {
-    background-color: #28a745;
+    background-color: #0088ff;
     color: white;
     padding: 8px;
     border-radius: 3px;
@@ -44,7 +44,6 @@
 .step-content h3 {
     font-size: 1.1em;
     margin-bottom: 8px;
-    color: #28a745;
 }
 
 .step-content p {
@@ -53,155 +52,82 @@
     margin: 8px 0;
 }
 
-.instruction {
-    font-weight: bold;
-    color: #28a745;
-    background-color: #f8fff9;
-    padding: 10px;
-    border-left: 4px solid #28a745;
-    margin: 15px 0;
-}
-
 .step-image {
     text-align: center;
     margin: 15px 0;
-    position: relative;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-    border: 2px solid #28a745;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f8fff9;
+    position: relative; /* Added position relative for positioning child elements */
 }
 
 .step-image img {
     max-width: 85%;
     height: auto;
+    border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #ffffff;
+    padding: 4px;
+    background-color: #f9f9f9;
 }
 
-.hidden {
-    display: none;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
 .clickable-area {
     position: absolute;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent box */
+    border: 2px dashed rgba(0, 136, 255, 0.3); /* Slightly visible border */
     cursor: pointer;
-    border: 2px dashed transparent;
-    transition: border-color 0.3s;
+    z-index: 10;
 }
 
-.clickable-area:hover {
-    border-color: #28a745;
-    background-color: rgba(40, 167, 69, 0.1);
+.click-arrow {
+    position: absolute;
+    color: #0088ff;
+    font-weight: bold;
+    font-size: 24px;
+    animation: bounce 1s infinite;
+    z-index: 20;
 }
 
-/* Position for NH4OH bottle - adjust based on actual image */
-#equipment-clickable {
-    top: 20%;
-    left: 15%;
-    width: 25%;
-    height: 40%;
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .navigation {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
-    padding: 15px;
-    border-top: 1px solid #e0e0e0;
 }
 
-.nav-button {
-    background-color: #28a745;
+.navigation button {
+    padding: 7px 12px;
+    background-color: #0088ff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s;
+    font-size: 0.9em;
 }
 
-.nav-button:hover:not(:disabled) {
-    background-color: #218838;
+.navigation button:hover {
+    background-color: #0066cc;
 }
 
-.nav-button:disabled {
-    background-color: #6c757d;
-    cursor: not-allowed;
-    opacity: 0.6;
+/* Hidden by default until animation completes */
+.hidden {
+    display: none;
 }
 
-/* Animation effects */
-.step-completed {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-}
-
-.step-completed .step-header {
-    background-color: #218838;
-}
-
-.step-completed .section-header {
-    color: #155724;
-}
-
-/* pH indicator styling */
-.ph-indicator {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 15px;
+.instruction {
     font-weight: bold;
-    margin: 5px;
-    min-width: 60px;
-    text-align: center;
-}
-
-.ph-acidic {
-    background-color: #ffebee;
-    color: #c62828;
-    border: 2px solid #ef5350;
-}
-
-.ph-neutral {
-    background-color: #fff3e0;
-    color: #ef6c00;
-    border: 2px solid #ff9800;
-}
-
-.ph-alkaline {
-    background-color: #e8f5e8;
-    color: #2e7d32;
-    border: 2px solid #4caf50;
-}
-
-.feedback-message {
+    color: #0088ff;
+    background-color: #f8f9fa;
     padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-weight: bold;
-    text-align: center;
-}
-
-.feedback-success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-
-.feedback-warning {
-    background-color: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffeaa7;
-}
-
-.feedback-error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    border-left: 4px solid #0088ff;
+    margin: 15px 0;
 }
