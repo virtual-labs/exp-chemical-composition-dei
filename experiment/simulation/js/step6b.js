@@ -1,4 +1,4 @@
-// JavaScript for Step 4 of the Chemical Composition of Cement experiment
+// JavaScript for Step 6b of the Chemical Composition of Cement experiment
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgWidth = staticImage.offsetWidth;
         const imgHeight = staticImage.offsetHeight;
         
-        // Position clickable area over the acid addition area (adjust these values based on 4.png)
-        // These are approximate values - you'll need to adjust them based on where the beaker/acid is in your image
-        equipmentClickable.style.left = imgWidth * 0.148 + 'px'; // 45% from the left
-        equipmentClickable.style.top = imgHeight * 0.144 + 'px'; // 40% from the top
-        equipmentClickable.style.width = imgWidth * 0.07 + 'px'; // 25% of image width
-        equipmentClickable.style.height = imgHeight * 0.21 + 'px'; // 25% of image height
+        // Position clickable area over the clean beaker (adjust these values based on 6b.png)
+        // These are approximate values - you'll need to adjust them based on where the clean beaker is in your image
+        equipmentClickable.style.left = imgWidth * 0.70 + 'px'; // 55% from the left
+        equipmentClickable.style.top = imgHeight * 0.30 + 'px'; // 50% from the top
+        equipmentClickable.style.width = imgWidth * 0.13 + 'px'; // 20% of image width
+        equipmentClickable.style.height = imgHeight * 0.50 + 'px'; // 25% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 10000; // 4 seconds - replace with actual duration of your GIF
+        const gifDuration = 6000; // 4 seconds - for collecting filtrate
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step5.html';
+        window.location.href = 'Step7.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3.html';
+        window.location.href = 'Step6.html';
     });
 });
