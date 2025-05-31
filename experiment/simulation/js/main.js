@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (startButton) {
         startButton.addEventListener('click', function() {
             // Navigate to the first step of the experiment
-            window.location.href = './sections/preparation-of-cement-solution/steps/Step1.html';
+            window.location.href = './sections/index.html';
         });
     }
 });
