@@ -98,6 +98,74 @@
     }
 }
 
+/* Weighing Panel Styles */
+.weighing-panel {
+    background-color: #f0f8ff;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.weighing-panel h3 {
+    color: #4CAF50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.weighing-results {
+    margin-bottom: 20px;
+}
+
+.weighing-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8fff8;
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.weighing-step label {
+    font-weight: 500;
+    color: #333;
+}
+
+.weighing-step span {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.1em;
+}
+
+.action-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calculate-btn {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 107, 53, 0.3);
+}
+
+.calculate-btn:hover {
+    background-color: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.4);
+}
+
 /* Calculation Panel Styles */
 .calculation-panel {
     background-color: #f8f9fa;
