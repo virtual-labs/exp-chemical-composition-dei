@@ -1,0 +1,133 @@
+/* CSS for Step 2 of Determination of Silicon Dioxide (SiO₂) */
+
+.step-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.procedure-section {
+    background-color: #f8f9fa;
+    border: 2px solid #0088ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-header {
+    color: #0088ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.step-header {
+    background-color: #0088ff;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.step-header h2 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.step-content {
+    margin-bottom: 20px;
+}
+
+.step-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.step-image {
+    text-align: center;
+    margin: 15px 0;
+    position: relative; /* Added position relative for positioning child elements */
+}
+
+.step-image img {
+    max-width: 85%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: #f9f9f9;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.clickable-area {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent box */
+    border: 2px dashed rgba(0, 136, 255, 0.3); /* Slightly visible border */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.click-arrow {
+    position: absolute;
+    color: #0088ff;
+    font-weight: bold;
+    font-size: 24px;
+    animation: bounce 1s infinite;
+    z-index: 20;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 7px 12px;
+    background-color: #0088ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.navigation button:hover {
+    background-color: #0066cc;
+}
+
+/* Hidden by default until animation completes */
+.hidden {
+    display: none;
+}
+
+.instruction {
+    font-weight: bold;
+    color: #0088ff;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #0088ff;
+    margin: 15px 0;
+}
