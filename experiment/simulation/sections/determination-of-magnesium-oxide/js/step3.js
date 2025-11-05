@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Position clickable area over the oven/drying equipment (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
         equipmentClickable.style.left = imgWidth * 0.68 + 'px'; // 40% from the left
-        equipmentClickable.style.top = imgHeight * 0.58999 + 'px'; // 25% from the top
-        equipmentClickable.style.width = imgWidth * 0.04 + 'px'; // 30% of image width
-        equipmentClickable.style.height = imgHeight * 0.04 + 'px'; // 35% of image height
+        equipmentClickable.style.top = imgHeight * 0.58 + 'px'; // 25% from the top
+        equipmentClickable.style.width = imgWidth * 0.05 + 'px'; // 30% of image width
+        equipmentClickable.style.height = imgHeight * 0.05 + 'px'; // 35% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step4.html';
+        window.location.href = 'Step3a.html';
     });
     
     // Add click event listener for prev-step button

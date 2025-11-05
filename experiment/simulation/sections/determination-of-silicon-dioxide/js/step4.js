@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgHeight = staticImage.offsetHeight;
         
         // Position clickable area over the oven (for opening phase)
-        ovenClickable.style.left = imgWidth * 0.58 + 'px';
-        ovenClickable.style.top = imgHeight * 0.50 + 'px';
+        ovenClickable.style.left = imgWidth * 0.68 + 'px';
+        ovenClickable.style.top = imgHeight * 0.58 + 'px';
         ovenClickable.style.width = imgWidth * 0.05 + 'px';
         ovenClickable.style.height = imgHeight * 0.05 + 'px';
         
