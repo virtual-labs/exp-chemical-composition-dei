@@ -1,5 +1,9 @@
 // JavaScript for Step 3 of Determination of Silicon Dioxide (SiO₂)
-
+if (localStorage.getItem('step2Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '2');
+  alert('Please complete Step 2 before proceeding to Step 3.');
+  window.location.href = '../index.html';
+}
 document.addEventListener('DOMContentLoaded', function () {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -86,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // After the filtration animation completes, start washing phase
             setTimeout(function () {
+                localStorage.setItem('step3Completed', 'true');
                 // Hide filtration animation
                 animationGif.classList.add('hidden');
 

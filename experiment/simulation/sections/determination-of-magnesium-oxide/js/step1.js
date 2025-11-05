@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
+            localStorage.setItem('step1Completed', 'true');
             nextStepButton.classList.remove('hidden');
         }, gifDuration);
     });
