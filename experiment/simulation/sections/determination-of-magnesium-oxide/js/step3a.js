@@ -1,5 +1,4 @@
-// JavaScript for Step 6d
-
+// JavaScript for Step 6e
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -28,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the hot plate (adjust these values based on 5.png)
         // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
-        equipmentClickable.style.left = imgWidth * 0.68 + 'px'; // 15% from the left
-        equipmentClickable.style.top = imgHeight * 0.58 + 'px'; // 60% from the top
-        equipmentClickable.style.width = imgWidth * 0.05 + 'px'; // 25% of image width
-        equipmentClickable.style.height = imgHeight * 0.05 + 'px'; // 15% of image height
+        equipmentClickable.style.left = imgWidth * 0.8 + 'px'; // 15% from the left
+        equipmentClickable.style.top = imgHeight * 0.6 + 'px'; // 60% from the top
+        equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
+        equipmentClickable.style.height = imgHeight * 0.2 + 'px'; // 15% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
@@ -65,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6e.html';
+        window.location.href = 'Step4.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6c.html';
+        window.location.href = 'Step3.html';
     });
 });
