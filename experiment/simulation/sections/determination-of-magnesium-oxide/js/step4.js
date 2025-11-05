@@ -1,3 +1,8 @@
+if (localStorage.getItem('step3Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '3');
+  alert('Please complete Step 3 before proceeding to Step 4.');
+  window.location.href = '../index.html';
+}
 document.addEventListener('DOMContentLoaded', function() {
     // Get all necessary elements
     const staticImage = document.getElementById('static-image');
@@ -69,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After the GIF animation completes, show weighing results
         setTimeout(function() {
+            localStorage.setItem('step4Completed', 'true');
             // Hide the animation and show weighing panel
             animationGif.classList.add('hidden');
             weighingPanel.classList.remove('hidden');

@@ -1,5 +1,9 @@
 // JavaScript for Step 6
-
+if (localStorage.getItem('step5Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '5');
+  alert('Please complete Step 5 before proceeding to Step 6.');
+  window.location.href = '../index.html';
+}
 document.addEventListener('DOMContentLoaded', function () {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -60,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // After the GIF animation completes, show the next step button
         setTimeout(function () {
+            localStorage.setItem('step6Completed', 'true');
             nextStepButton.classList.remove('hidden');
         }, gifDuration);
     });

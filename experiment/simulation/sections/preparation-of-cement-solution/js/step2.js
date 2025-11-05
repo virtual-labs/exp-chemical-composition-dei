@@ -1,5 +1,9 @@
 // JavaScript for Step 2 of the Chemical Composition of Cement experiment
-
+if (localStorage.getItem('step1Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '1');
+  alert('Please complete Step 1 before proceeding to Step 2.');
+  window.location.href = '../index.html';
+}
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -59,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
+            localStorage.setItem('step2Completed', 'true');
             nextStepButton.classList.remove('hidden');
         }, gifDuration);
     });
