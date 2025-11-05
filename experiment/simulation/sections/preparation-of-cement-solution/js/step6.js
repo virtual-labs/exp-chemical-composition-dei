@@ -1,4 +1,9 @@
 // JavaScript for Step 6 of the Chemical Composition of Cement experiment
+if (localStorage.getItem('step5Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '5');
+  alert('Please complete Step 5 before proceeding to Step 6.');
+  window.location.href = '../index.html';
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
@@ -59,13 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
+            localStorage.setItem('step6Completed', 'true');
             nextStepButton.classList.remove('hidden');
         }, gifDuration);
     });
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step7.html';
+        window.location.href = 'Step6b.html';
     });
     
     // Add click event listener for prev-step button

@@ -1,4 +1,4 @@
-/* CSS for Step 3b of Determination of Calcium Oxide (CaO) */
+/* CSS for Step 1 of Determination of Calcium Oxide (CaO) */
 
 .step-container {
     max-width: 700px;
@@ -55,7 +55,7 @@
 .step-image {
     text-align: center;
     margin: 15px 0;
-    position: relative; /* Added position relative for positioning child elements */
+    position: relative;
 }
 
 .step-image img {
@@ -74,8 +74,8 @@
 
 .clickable-area {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent box */
-    border: 2px dashed rgba(0, 136, 255, 0.3); /* Slightly visible border */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(0, 136, 255, 0.3);
     cursor: pointer;
     z-index: 10;
 }
@@ -90,12 +90,8 @@
 }
 
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .navigation {
@@ -118,7 +114,6 @@
     background-color: #0066cc;
 }
 
-/* Hidden by default until animation completes */
 .hidden {
     display: none;
 }

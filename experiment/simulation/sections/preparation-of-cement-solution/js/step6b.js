@@ -1,4 +1,9 @@
 // JavaScript for Step 6b of the Chemical Composition of Cement experiment
+if (localStorage.getItem('step6Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '6');
+  alert('Please complete Step 6 before proceeding to Step 6b.');
+  window.location.href = '../index.html';
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
@@ -6,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const animationGif = document.getElementById('animation-gif');
     const equipmentClickable = document.getElementById('equipment-clickable');
     const clickArrow = document.getElementById('click-arrow');
-    const nextStepButton = document.getElementById('next-step');
+    const nextStepButton = document.getElementById('next-step1');
     const prevStepButton = document.getElementById('prev-step');
     
     // Set initial states
@@ -59,13 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
+            localStorage.setItem('step6bCompleted', 'true');
             nextStepButton.classList.remove('hidden');
         }, gifDuration);
     });
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step7.html';
+        window.location.href = '../../index.html';
+        console.log('Navigating to the next step (to be implemented)');
     });
     
     // Add click event listener for prev-step button

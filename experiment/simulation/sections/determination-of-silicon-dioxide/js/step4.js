@@ -1,5 +1,9 @@
 // JavaScript for Step 4 of Determination of Silicon Dioxide (SiO₂)
-
+if (localStorage.getItem('step3Completed') !== 'true') {
+  localStorage.setItem('blinkStep', '3');
+  alert('Please complete Step 3 before proceeding to Step 4.');
+  window.location.href = '../index.html';
+}
 document.addEventListener('DOMContentLoaded', function() {
     // Get all the image and UI elements
     const staticImage = document.getElementById('static-image');
@@ -121,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dryingAnimationDuration = 6000; // 6 seconds
             
             setTimeout(function() {
+                 localStorage.setItem('step4ssCompleted', 'true');
                 // Hide drying gif, show oven closed
                 dryingGif.classList.add('hidden');
                 ovenClosed.classList.remove('hidden');
