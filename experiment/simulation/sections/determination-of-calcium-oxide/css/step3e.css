@@ -1,4 +1,10 @@
-/* CSS for Step 6 of the Chemical Composition of Cement experiment */
+/* CSS for Step 1 of Determination of Calcium Oxide (CaO) */
+
+.step-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
 
 .procedure-section {
     background-color: #f8f9fa;
@@ -16,12 +22,6 @@
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.step-container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 15px;
 }
 
 .step-header {
@@ -74,39 +74,24 @@
 
 .clickable-area {
     position: absolute;
-    border: 2px dashed #0088ff;
-    background-color: rgba(0, 136, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(0, 136, 255, 0.3);
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.clickable-area:hover {
-    background-color: rgba(0, 136, 255, 0.2);
-    border-color: #0066cc;
+    z-index: 10;
 }
 
 .click-arrow {
     position: absolute;
-    font-size: 24px;
     color: #0088ff;
+    font-weight: bold;
+    font-size: 24px;
     animation: bounce 1s infinite;
-    cursor: pointer;
+    z-index: 20;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-.hidden {
-    display: none;
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .navigation {
@@ -116,10 +101,10 @@
 }
 
 .navigation button {
+    padding: 7px 12px;
     background-color: #0088ff;
     color: white;
     border: none;
-    padding: 8px 16px;
     border-radius: 3px;
     cursor: pointer;
     font-size: 0.9em;
@@ -129,16 +114,15 @@
     background-color: #0066cc;
 }
 
-.navigation button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.hidden {
+    display: none;
 }
 
 .instruction {
     font-weight: bold;
     color: #0088ff;
-    background-color: #f0f8ff;
-    padding: 8px;
-    border-radius: 3px;
+    background-color: #f8f9fa;
+    padding: 10px;
     border-left: 4px solid #0088ff;
+    margin: 15px 0;
 }

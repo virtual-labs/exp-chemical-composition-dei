@@ -152,6 +152,6 @@ if (localStorage.getItem('step3Completed') !== 'true') {
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3c.html';
+        window.location.href = 'Step3e.html';
     });
 });
