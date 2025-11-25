@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the funnel (adjust these values based on 6.png)
         // These are approximate values - you'll need to adjust them based on where the funnel is in your image
-        equipmentClickable.style.left = imgWidth * 0.13 + 'px'; // 35% from the left
-        equipmentClickable.style.top = imgHeight * 0.067 + 'px'; // 25% from the top
+        equipmentClickable.style.left = imgWidth * 0.48+ 'px'; // 35% from the left
+        equipmentClickable.style.top = imgHeight * 0.020 + 'px'; // 25% from the top
         equipmentClickable.style.width = imgWidth * 0.13 + 'px'; // 20% of image width
-        equipmentClickable.style.height = imgHeight * 0.25 + 'px'; // 25% of image height
+        equipmentClickable.style.height = imgHeight * 0.20 + 'px'; // 25% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6b.html';
+        window.location.href = 'Step7.html';
     });
     
     // Add click event listener for prev-step button
