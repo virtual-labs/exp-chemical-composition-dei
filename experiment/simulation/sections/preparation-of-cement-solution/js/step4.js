@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the acid addition area (adjust these values based on 4.png)
         // These are approximate values - you'll need to adjust them based on where the beaker/acid is in your image
-        equipmentClickable.style.left = imgWidth * 0.148 + 'px'; // 45% from the left
-        equipmentClickable.style.top = imgHeight * 0.144 + 'px'; // 40% from the top
+        equipmentClickable.style.left = imgWidth * 0.410 + 'px'; // 45% from the left
+        equipmentClickable.style.top = imgHeight * 0.441 + 'px'; // 40% from the top
         equipmentClickable.style.width = imgWidth * 0.07 + 'px'; // 25% of image width
-        equipmentClickable.style.height = imgHeight * 0.21 + 'px'; // 25% of image height
+        equipmentClickable.style.height = imgHeight * 0.25 + 'px'; // 25% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';

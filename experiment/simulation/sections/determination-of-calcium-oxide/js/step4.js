@@ -147,11 +147,11 @@ if (localStorage.getItem('step3Completed') !== 'true') {
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
         alert('Calcium oxide determination analysis complete! The cement sample contains 64.0% CaO.');
-        window.location.href = '../index.html';
+        window.location.href = '../../index.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3c.html';
+        window.location.href = 'Step3e.html';
     });
 });
