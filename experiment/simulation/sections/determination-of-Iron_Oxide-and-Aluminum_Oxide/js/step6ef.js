@@ -1,4 +1,5 @@
-// JavaScript for Step 6e
+// JavaScript for Step 3e: Drying of Precipitate
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -11,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial states
     nextStepButton.classList.add('hidden'); // Initially hide the next button
     
-    // Position the clickable area over the equipment on the image
+    // Position the clickable area over the oven/drying equipment on the image
+    // These values will need to be adjusted based on the actual image
     function positionClickableElements() {
         // Wait for the image to load to get its dimensions
         if (staticImage.complete) {
@@ -25,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgWidth = staticImage.offsetWidth;
         const imgHeight = staticImage.offsetHeight;
         
-        // Position clickable area over the hot plate (adjust these values based on 5.png)
-        // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
-        equipmentClickable.style.left = imgWidth * 0.8 + 'px'; // 15% from the left
-        equipmentClickable.style.top = imgHeight * 0.6 + 'px'; // 60% from the top
-        equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
-        equipmentClickable.style.height = imgHeight * 0.2 + 'px'; // 15% of image height
+        // Position clickable area over the oven/drying equipment (adjust these values as needed)
+        // These are approximate values - you'll need to adjust them based on where the equipment is in your image
+        equipmentClickable.style.left = imgWidth * 0.50 + 'px'; // 40% from the left
+        equipmentClickable.style.top = imgHeight * 0.28 + 'px'; // 25% from the top
+        equipmentClickable.style.width = imgWidth * 0.05 + 'px'; // 30% of image width
+        equipmentClickable.style.height = imgHeight * 0.05 + 'px'; // 35% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
@@ -53,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show the animation GIF
         animationGif.classList.remove('hidden');
         
-        // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 3000; // 8 seconds - longer duration for complete heating and dissolution process
+        // Calculate the duration of the GIF (drying process takes longer)
+        const gifDuration = 4000; // 4 seconds for drying process
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
@@ -64,11 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3b.html';
+        window.location.href = 'Step6f.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3.html';
+        window.location.href = 'Step6e.html';
     });
 });
