@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6f.html';
+        window.location.href = 'Step6ef.html';
     });
     
     // Add click event listener for prev-step button
