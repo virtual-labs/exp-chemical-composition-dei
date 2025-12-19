@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Chemical Composition of Cement - Step 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../css/step7.css">
 </head>
@@ -25,17 +26,23 @@
 
             <div class="step-image">
                 <div class="image-container">
-                    <img id="static-image" src="../images/7.png" alt="Collecting Filtrate in Clean Beaker">
-                    <img id="animation-gif" class="hidden" src="../images/7.gif" alt="Filtrate Collection Animation">
+                    <!-- Static image shown first -->
+                    <img id="static-image" src="../images/7.png" alt="Collecting filtrate in a clean beaker">
 
-                    <div id="equipment-clickable" class="clickable-area"></div>
-                    <div id="click-arrow" class="click-arrow">👇</div>
+                    <!-- Animation toggled by JS -->
+                    <img id="animation-gif" class="hidden" src="../images/7.gif" alt="Filtrate collection animation">
+
+                    <!-- Click target (JS will size/position via CSS) -->
+                    <div id="equipment-clickable" class="clickable-area" role="button" aria-label="Collect filtrate"></div>
+
+                    <!-- Arrow indicator -->
+                    <div id="click-arrow" class="click-arrow" aria-hidden="true">👇</div>
                 </div>
             </div>
 
             <div class="navigation">
-                <button id="prev-step">Previous Step</button>
-                <button id="next-step" class="hidden">Next Step</button>
+                <button id="prev-step" type="button">Previous Step</button>
+                <button id="next-step" type="button" class="hidden">Next Step</button>
             </div>
         </div>
     </div>
