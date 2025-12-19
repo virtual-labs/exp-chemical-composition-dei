@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // Position clickable area over the filter funnel (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the funnel is in your image
 
-        equipmentClickable.style.left = imgWidth * 0.145 + 'px'; // 11.5% from the left
-        equipmentClickable.style.top = imgHeight * 0.15 + 'px'; // 15% from the top
+        equipmentClickable.style.left = imgWidth * 0.490 + 'px'; // 11.5% from the left
+        equipmentClickable.style.top = imgHeight * 0.20 + 'px'; // 15% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 15% of image width
-        equipmentClickable.style.height = imgHeight * 0.25 + 'px';
+        equipmentClickable.style.height = imgHeight * 0.20 + 'px';
 
         // Position washing clickable area (will be used in phase 2)
         washingClickable.style.left = imgWidth * 0.35 + 'px'; // Different position for washing
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             washingGif.classList.remove('hidden');
 
             // Update instruction text
-            instructionText.textContent = 'Washing in progress... Removing soluble impurities.';
+            instructionText.textContent = 'Filtartion in progress... Please wait.';
 
             // Calculate the duration of the washing GIF
             const washingDuration = 8000; // 8 seconds for washing
