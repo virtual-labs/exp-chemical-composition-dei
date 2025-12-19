@@ -1,76 +1,87 @@
-/* You CSS goes in here */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6eef2;
-    font-size: 14px; /* Base font size reduced */
-}
-
-.header {
-    background-color: #0088ff;
-    color: white;
-    text-align: center;
-    padding: 10px 0; /* Reduced padding */
-    margin-bottom: 15px; /* Reduced margin */
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 1.8em; /* Smaller heading */
+    background-color: #ffffff; /* White background */
+    font-size: 14px;
 }
 
 .content {
-    max-width: 900px; /* Slightly reduced max width */
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 15px; /* Reduced padding */
+    padding: 0 15px;
 }
 
-.objective, .instruments {
-    margin-bottom: 15px; /* Reduced margin */
+/* Unified experiment box */
+.experiment-box {
+    background-color: #e6f2ff;   /* Light blue background */
+    border: 2px solid #99ccff;   /* Slightly darker border */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.objective {
-    margin-top: 55px; /* Added space to move objective down */
+/* Heading bar inside the box */
+.experiment-box .box-heading {
+    background-color: #0088ff;   /* Same as Heat of Hydration heading */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
-.objective h2, .instruments h2 {
-    font-size: 1.2em; /* Smaller heading */
-    margin-bottom: 3px; /* Reduced margin */
+/* Sections inside the box */
+.objective,
+.instruments {
+    margin-bottom: 15px;
+}
+
+.objective h3,
+.instruments h3 {
+    font-size: 1.2em;
+    margin: 0 6px 0 0;
     display: inline;
 }
 
-.objective p, .instruments p {
+.objective p,
+.instruments p {
     display: inline;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
+    margin: 0;
 }
 
+/* Tools image styling */
 .tools-container {
     text-align: center;
-    margin: 25px 0; /* Reduced margin */
+    margin: 20px 0;
 }
 
 .tools-image {
-    max-width: 90%; /* Slightly smaller image */
+    max-width: 90%;
     height: auto;
     border: 1px solid #ccc;
-    padding: 8px; /* Reduced padding */
+    padding: 8px;
     background-color: #f9f9f9;
+    border-radius: 6px;
 }
 
+/* Start button aligned inside the box */
 .start-button {
     text-align: right;
-    margin: 15px 0; /* Reduced margin */
+    margin-top: 10px;
 }
 
 #start-experiment {
     background-color: #0088ff;
     color: white;
     border: none;
-    padding: 8px 20px; /* Reduced padding */
-    font-size: 1em; /* Smaller font size */
+    padding: 8px 20px;
+    font-size: 1em;
     cursor: pointer;
-    border-radius: 3px; /* Smaller border radius */
+    border-radius: 5px;
 }
 
 #start-experiment:hover {
