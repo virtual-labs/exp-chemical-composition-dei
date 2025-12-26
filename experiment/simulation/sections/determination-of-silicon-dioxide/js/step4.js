@@ -1,9 +1,3 @@
-// JavaScript for Step 4 of Determination of Silicon Dioxide (SiO₂)
-if (localStorage.getItem('step3Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '3');
-  alert('Please complete Step 3 before proceeding to Step 4.');
-  window.location.href = '../index.html';
-}
 document.addEventListener('DOMContentLoaded', function() {
     // Get all the image and UI elements
     const staticImage = document.getElementById('static-image');
@@ -90,10 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             staticImage.classList.add('hidden');
             ovenClickable.classList.add('hidden');
             clickArrow.classList.add('hidden');
-            
-            // Update instruction text
-            instructionText.textContent = 'Oven opened! Now click on the silicon dioxide residue to place it in the oven.';
-            
+         
             // Show oven opened image
             ovenOpened.classList.remove('hidden');
             

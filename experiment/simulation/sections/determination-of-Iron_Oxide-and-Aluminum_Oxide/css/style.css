@@ -1,28 +1,4 @@
-/* CSS for Step 4 of Determination of Calcium Oxide (CaO) */
-
-.step-container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.procedure-section {
-    background-color: #f8f9fa;
-    border: 2px solid #0088ff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.section-header {
-    color: #0088ff;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* CSS for Step 4 of the Chemical Composition of Cement experiment */
 
 .step-header {
     background-color: #0088ff;
@@ -32,26 +8,6 @@
     margin-bottom: 15px;
 }
 
-.step-header h2 {
-    font-size: 1.3em;
-    margin: 0;
-}
-
-.step-content {
-    margin-bottom: 20px;
-}
-
-.step-content h3 {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-}
-
-.step-content p {
-    font-size: 0.95em;
-    line-height: 1.4;
-    margin: 8px 0;
-}
-
 .step-image {
     text-align: center;
     margin: 15px 0;
@@ -59,12 +15,8 @@
 }
 
 .step-image img {
-    max-width: 85%;
+    max-width: 90%;
     height: auto;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 4px;
-    background-color: #f9f9f9;
 }
 
 .image-container {
@@ -74,28 +26,97 @@
 
 .clickable-area {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px dashed rgba(0, 136, 255, 0.3);
     cursor: pointer;
-    z-index: 10;
 }
 
 .click-arrow {
     position: absolute;
-    color: #0088ff;
-    font-weight: bold;
     font-size: 24px;
+    color: #0088ff;
     animation: bounce 1s infinite;
-    z-index: 20;
+    cursor: pointer;
 }
 
 @keyframes bounce {
-    0%, 100% {
+    0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
-    50% {
+    40% {
         transform: translateY(-10px);
     }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #1475e4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    /* font-size: 1em; */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navigation button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+/* Wrapper to center the step box */
+.step-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Light blue box for the entire step */
+.step-box {
+    background-color: #d3e9f2;
+    padding: 20px;
+}
+
+/* Heading bar inside the box */
+.step-heading-bar {
+    background-color: #0088ff;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.step{
+    display: inline-block;
+}
+
+.statement{
+    margin-top: -25px;
+}
+
+.step-number{
+    background-color: rgb(20, 117, 228);
+    color: white;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.instructions{
+    position: absolute;
+    display: inline;
+    text-align: justify;
+    font-size: 18px;
 }
 
 /* Weighing Panel Styles */
@@ -287,13 +308,4 @@
 /* Hidden by default until animation completes */
 .hidden {
     display: none;
-}
-
-.instruction {
-    font-weight: bold;
-    color: #0088ff;
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-left: 4px solid #0088ff;
-    margin: 15px 0;
 }

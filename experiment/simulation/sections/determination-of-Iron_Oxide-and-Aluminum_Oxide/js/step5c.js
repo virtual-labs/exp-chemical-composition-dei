@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the weighing GIF
-        const gifDuration = 4000; // 2 seconds for weighing process
+        const gifDuration = 1000; // 2 seconds for weighing process
         
         // After the GIF animation completes, show weighing results
         setTimeout(function() {

@@ -1,6 +1,17 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+
+## Theory
 Cement is a key ingredient in the construction industry due to its ability to bind materials together, contributing to the strength and durability of concrete structures. Its primary chemical components include calcium, silicon, aluminum, iron, and other minor elements. The determination of these components provides essential information about the cement's quality, which affects its performance in construction applications. The chemical composition of cement directly influences critical properties such as strength, workability, setting time, and durability.
 
-## Cement Composition and the Importance of Each Oxide
+### Cement Composition and the Importance of Each Oxide
 
 Cement is a complex mixture of various compounds primarily composed of oxides that undergo intricate chemical transformations during hydration. Understanding these oxides and their reactions is fundamental to predicting and controlling cement performance. The following is a comprehensive description of each major oxide, its hydration mechanisms, and associated chemical reactions:
 
@@ -10,24 +21,18 @@ Cement is a complex mixture of various compounds primarily composed of oxides th
 - Reacts exothermically with water to form calcium hydroxide, which then participates in the formation of calcium silicate hydrates (C-S-H), the primary binding phase.
 - **Primary contributor to strength development** through C-S-H gel formation.
 - Excess free CaO (free lime) may lead to delayed expansive reactions, causing cracking and affecting long-term durability.
-- The CaO/SiO₂ ratio is a critical parameter in determining cement reactivity and strength characteristics.
+- The $\text{CaO/SiO}_2$ ratio is a critical parameter in determining cement reactivity and strength characteristics.
 
 **Key Reactions:**
 
 *Hydration of CaO:*
-```
-CaO + H₂O → Ca(OH)₂ + Heat (ΔH = -65.2 kJ/mol)
-```
+$$\text{CaO} + \text{H}_2\text{O} \rightarrow \text{Ca(OH)}_2 + \text{Heat} \quad (\Delta H = -65.2 \text{ kJ/mol})$$
 
 *Formation of C-S-H (in presence of silicates):*
-```
-Ca(OH)₂ + SiO₂ → C-S-H (calcium silicate hydrate gel)
-```
+$$\text{Ca(OH)}_2 + \text{SiO}_2 \rightarrow \text{C-S-H} \text{ (calcium silicate hydrate gel)}$$
 
 *Alternative representation:*
-```
-3CaO·SiO₂ + (n+3)H₂O → CₓSyHz (C-S-H gel) + (3-x)Ca(OH)₂
-```
+$$3\text{CaO}\cdot\text{SiO}_2 + (n+3)\text{H}_2\text{O} \rightarrow \text{C}_x\text{S}_y\text{H}_z \text{ (C-S-H gel)} + (3-x)\text{Ca(OH)}_2$$
 
 ### 2. Silicon Dioxide (SiO₂)
 
@@ -40,95 +45,71 @@ Ca(OH)₂ + SiO₂ → C-S-H (calcium silicate hydrate gel)
 **Key Reactions:**
 
 *Formation of calcium silicate hydrates:*
-```
-2CaO + SiO₂ + H₂O → C₃S₂H₃ (C-S-H gel, simplified stoichiometry)
-```
+$$2\text{CaO} + \text{SiO}_2 + \text{H}_2\text{O} \rightarrow \text{C}_3\text{S}_2\text{H}_3 \text{ (C-S-H gel, simplified stoichiometry)}$$
 
 *Hydration of dicalcium silicate (belite):*
-```
-2CaO·SiO₂ + xH₂O → CₓSyHz (C-S-H) + Ca(OH)₂
-```
+$$2\text{CaO}\cdot\text{SiO}_2 + x\text{H}_2\text{O} \rightarrow \text{C}_x\text{S}_y\text{H}_z \text{ (C-S-H)} + \text{Ca(OH)}_2$$
 
 *Pozzolanic reaction (long-term):*
-```
-Ca(OH)₂ + SiO₂ + H₂O → C-S-H (secondary strength gain)
-```
+$$\text{Ca(OH)}_2 + \text{SiO}_2 + \text{H}_2\text{O} \rightarrow \text{C-S-H} \text{ (secondary strength gain)}$$
 
 ### 3. Aluminum Oxide (Al₂O₃)
 
 - Typically comprises 3-8% by mass.
 - **Contributes to formation of calcium aluminates**, which significantly accelerate initial setting and early strength development.
-- Involved in formation of tricalcium aluminate (C₃A, most reactive phase) and alite (C₃S, primary strength-giving phase).
+- Involved in formation of tricalcium aluminate ($\text{C}_3\text{A}$, most reactive phase) and alite ($\text{C}_3\text{S}$, primary strength-giving phase).
 - Excessive amounts increase hydration rate, exothermic heat release, and susceptibility to sulfate attack.
-- Gypsum is added to control C₃A reactivity and prevent flash setting.
+- Gypsum is added to control $\text{C}_3\text{A}$ reactivity and prevent flash setting.
 
 **Key Reactions:**
 
 *Formation of calcium aluminate hydrate:*
-```
-Al₂O₃ + 3CaO + 6H₂O → C₃AH₆ (calcium aluminate hexahydrate) + Heat
-```
+$$\text{Al}_2\text{O}_3 + 3\text{CaO} + 6\text{H}_2\text{O} \rightarrow \text{C}_3\text{AH}_6 \text{ (calcium aluminate hexahydrate)} + \text{Heat}$$
 
-*Rapid C₃A hydration (uncontrolled):*
-```
-Ca₃Al₂O₆ + 6H₂O → Ca₃Al₂(OH)₁₂ (flash set - undesirable)
-```
+*Rapid $\text{C}_3\text{A}$ hydration (uncontrolled):*
+$$\text{Ca}_3\text{Al}_2\text{O}_6 + 6\text{H}_2\text{O} \rightarrow \text{Ca}_3\text{Al}_2(\text{OH})_{12} \text{ (flash set - undesirable)}$$
 
 *Controlled reaction with gypsum (ettringite formation):*
-```
-C₃A + 3(CaSO₄·2H₂O) + 26H₂O → C₆AS̄₃H₃₂ (ettringite, needle-like crystals)
-```
+$$\text{C}_3\text{A} + 3(\text{CaSO}_4\cdot 2\text{H}_2\text{O}) + 26\text{H}_2\text{O} \rightarrow \text{C}_6\text{A}\bar{\text{S}}_3\text{H}_{32} \text{ (ettringite, needle-like crystals)}$$
 
 *Conversion to monosulfate (after gypsum depletion):*
-```
-C₆AS̄₃H₃₂ + 2C₃A + 4H₂O → 3C₄AS̄H₁₂ (monosulfate)
-```
+$$\text{C}_6\text{A}\bar{\text{S}}_3\text{H}_{32} + 2\text{C}_3\text{A} + 4\text{H}_2\text{O} \rightarrow 3\text{C}_4\text{A}\bar{\text{S}}\text{H}_{12} \text{ (monosulfate)}$$
 
 ### 4. Iron Oxide (Fe₂O₃)
 
 - Typically 0.5-6% by mass; imparts gray color to cement.
-- Combines with CaO and Al₂O₃ to form **tetracalcium aluminoferrite (C₄AF)**, also called ferrite phase.
-- Moderates setting time and contributes moderately to strength (less than C₃S or C₂S).
+- Combines with CaO and $\text{Al}_2\text{O}_3$ to form **tetracalcium aluminoferrite ($\text{C}_4\text{AF}$)**, also called ferrite phase.
+- Moderates setting time and contributes moderately to strength (less than $\text{C}_3\text{S}$ or $\text{C}_2\text{S}$).
 - **Reduces the early heat of hydration**, improving dimensional stability and reducing thermal cracking risk.
 - Acts as a flux during clinker formation, lowering the clinkering temperature.
 
 **Key Reactions:**
 
-*Formation of C₄AF (during clinker production):*
-```
-4CaO + Al₂O₃ + Fe₂O₃ → Ca₄Al₂Fe₂O₁₀ (C₄AF)
-```
+*Formation of $\text{C}_4\text{AF}$ (during clinker production):*
+$$4\text{CaO} + \text{Al}_2\text{O}_3 + \text{Fe}_2\text{O}_3 \rightarrow \text{Ca}_4\text{Al}_2\text{Fe}_2\text{O}_{10} \text{ (C}_4\text{AF)}$$
 
 *Hydration of ferrite phase:*
-```
-C₄AF + 10H₂O → C₃AH₆ + C₄FH₁₃ (calcium aluminate and ferrite hydrates)
-```
+$$\text{C}_4\text{AF} + 10\text{H}_2\text{O} \rightarrow \text{C}_3\text{AH}_6 + \text{C}_4\text{FH}_{13} \text{ (calcium aluminate and ferrite hydrates)}$$
 
-*Reaction with gypsum (similar to C₃A but slower):*
-```
-C₄AF + 3(CaSO₄·2H₂O) + 30H₂O → C₆(A,F)S̄₃H₃₂ + (A,F)H₃
-```
+*Reaction with gypsum (similar to $\text{C}_3\text{A}$ but slower):*
+$$\text{C}_4\text{AF} + 3(\text{CaSO}_4\cdot 2\text{H}_2\text{O}) + 30\text{H}_2\text{O} \rightarrow \text{C}_6(\text{A,F})\bar{\text{S}}_3\text{H}_{32} + (\text{A,F})\text{H}_3$$
 
 ### 5. Magnesium Oxide (MgO)
 
 - Present in small quantities (typically 0.1-4% by mass).
 - Slowly reacts with water to form **magnesium hydroxide (brucite)**, which has low solubility.
-- In moderate amounts (≤2%), improves soundness and reduces shrinkage.
-- **Excessive MgO (>5%)** causes delayed expansive reactions (years after placement), potentially leading to cracking and structural deterioration.
+- In moderate amounts ($\leq 2\%$), improves soundness and reduces shrinkage.
+- **Excessive MgO** ($> 5\%$) causes delayed expansive reactions (years after placement), potentially leading to cracking and structural deterioration.
 - Standards typically limit MgO content to prevent unsoundness.
 
 **Key Reactions:**
 
 *Hydration of MgO (slow reaction):*
-```
-MgO + H₂O → Mg(OH)₂ (brucite, expansive product)
-```
+$$\text{MgO} + \text{H}_2\text{O} \rightarrow \text{Mg(OH)}_2 \text{ (brucite, expansive product)}$$
 
 *Volume expansion:*
-```
-MgO (molar volume: 11.2 cm³/mol) → Mg(OH)₂ (molar volume: 24.6 cm³/mol)
-```
-This ~120% volume increase causes internal stress and potential cracking.
+$$\text{MgO} \text{ (molar volume: } 11.2 \text{ cm}^3/\text{mol}) \rightarrow \text{Mg(OH)}_2 \text{ (molar volume: } 24.6 \text{ cm}^3/\text{mol})$$
+This $\approx 120\%$ volume increase causes internal stress and potential cracking.
 
 ---
 
@@ -166,29 +147,29 @@ This ~120% volume increase causes internal stress and potential cracking.
 
 ### Reaction Mechanisms in Cement Chemistry
 
--   **Formation of Calcium Silicate (C₃S):**
-    \[ 3CaO + SiO₂ → Ca₃SiO₅ (C₃S) \]
+-   **Formation of Calcium Silicate ($\text{C}_3\text{S}$):**
+    $$3\text{CaO} + \text{SiO}_2 \rightarrow \text{Ca}_3\text{SiO}_5 \text{ (C}_3\text{S)}$$
     Provides strength.
 
--   **Formation of Calcium Aluminate (C₃A):**
-    \[ 3CaO + Al₂O₃ → Ca₃Al₂O₆ (C₃A) \]
+-   **Formation of Calcium Aluminate ($\text{C}_3\text{A}$):**
+    $$3\text{CaO} + \text{Al}_2\text{O}_3 \rightarrow \text{Ca}_3\text{Al}_2\text{O}_6 \text{ (C}_3\text{A)}$$
     Controls setting time.
 
--   **Formation of Calcium Ferrite (C₄AF):**
-    \[ 4CaO + Fe₂O₃ → Ca₄Al₂Fe₂O₁₂ (C₄AF) \]
+-   **Formation of Calcium Ferrite ($\text{C}_4\text{AF}$):**
+    $$4\text{CaO} + \text{Fe}_2\text{O}_3 \rightarrow \text{Ca}_4\text{Al}_2\text{Fe}_2\text{O}_{12} \text{ (C}_4\text{AF)}$$
     Affects hydration.
 
 ### Chemical Composition of Cement
 
   | Oxide | Chemical Formula | Function in Cement |
 |:------------|:------------|:------------------|
-| Calcium Oxide (Lime) | CaO | Forms C-S-H for strength. Excess causes expansion & cracking. |
-| Silicon Dioxide (Silica) | SiO₂ | Forms C-S-H, improves strength, durability, and resistance. |
-| Aluminum Oxide (Alumina) | Al₂O₃ | Contributes to early strength, lowers clinkering temp. Excess increases hydration heat. |
-| Ferric Oxide (Iron Oxide) | Fe₂O₃ | Gives color, aids clinker formation, forms C₄AF, enhances workability. |
-| Magnesium Oxide | MgO | Improves soundness in small amounts, excess causes cracking. |
-| Sulfur Trioxide | SO₃ | Regulates setting via gypsum. Excess causes sulfate attack. |
-| Alkalis (Na₂O, K₂O) | Na₂O, K₂O | Affect workability, may trigger alkali-silica reaction (ASR). |
+| Calcium Oxide (Lime) | $\text{CaO}$ | Forms C-S-H for strength. Excess causes expansion & cracking. |
+| Silicon Dioxide (Silica) | $\text{SiO}_2$ | Forms C-S-H, improves strength, durability, and resistance. |
+| Aluminum Oxide (Alumina) | $\text{Al}_2\text{O}_3$ | Contributes to early strength, lowers clinkering temp. Excess increases hydration heat. |
+| Ferric Oxide (Iron Oxide) | $\text{Fe}_2\text{O}_3$ | Gives color, aids clinker formation, forms $\text{C}_4\text{AF}$, enhances workability. |
+| Magnesium Oxide | $\text{MgO}$ | Improves soundness in small amounts, excess causes cracking. |
+| Sulfur Trioxide | $\text{SO}_3$ | Regulates setting via gypsum. Excess causes sulfate attack. |
+| Alkalis (Na₂O, K₂O) | $\text{Na}_2\text{O, K}_2\text{O}$ | Affect workability, may trigger alkali-silica reaction (ASR). |
 
 ### Conclusion
 

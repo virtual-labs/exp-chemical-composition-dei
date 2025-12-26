@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the oven/drying equipment (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
-        equipmentClickable.style.left = imgWidth * 0.50 + 'px'; // 40% from the left
-        equipmentClickable.style.top = imgHeight * 0.28 + 'px'; // 25% from the top
+        equipmentClickable.style.left = imgWidth * 0.470 + 'px'; // 40% from the left
+        equipmentClickable.style.top = imgHeight * 0.27 + 'px'; // 25% from the top
         equipmentClickable.style.width = imgWidth * 0.05 + 'px'; // 30% of image width
         equipmentClickable.style.height = imgHeight * 0.05 + 'px'; // 35% of image height
         
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (drying process takes longer)
-        const gifDuration = 4000; // 4 seconds for drying process
+        const gifDuration = 2000; // 4 seconds for drying process
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {

@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="../../../css/main.css">
-    <link rel="stylesheet" href="../css/step4.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Determination of Calcium Oxide - Step 4</title>
 </head>
+
 <body>
-    <div class="step-container">
-        <div class="procedure-section">
-            <h3 class="section-header">Determination of Calcium Oxide</h3>
-        </div>
-        
-        <div class="step-header">
-            <h2>Step 4: Weighing and Calculation</h2>
-        </div>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical Composition of Cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">4</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep3e">
+                    Click on the cement sack to begin sample preparation.
+                </p>
+            </div>
 
-        <div class="step-content">
-            <h3>About this step:</h3>
-            <p>In this final step, we will weigh the dried calcium oxalate precipitate and use stoichiometric relationships to calculate the percentage of calcium oxide (CaO) in the original cement sample.</p>
-            <p>The dried precipitate is calcium oxalate (CaC₂O₄). We'll use the analytical balance to determine its exact mass, then apply the stoichiometric conversion factor to find the equivalent amount of CaO.</p>
-            <p><strong>Stoichiometric relationship:</strong><br>
-            CaC₂O₄ → CaO<br>
-            Molecular weights: CaC₂O₄ = 128.1 g/mol, CaO = 56.08 g/mol<br>
-            Conversion factor: (56.08/100) = 0.5608</p>
-            <p class="instruction">Click on the analytical balance to weigh the precipitate first, then proceed with the calculation.</p>
-        </div>
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/4a.png" alt="Weighing Calcium Oxalate Precipitate">
+                    <img id="animation-gif" class="hidden" src="../images/4a.gif"
+                        alt="Weighing and Calculation Animation">
 
-        <div class="step-image">
-            <div class="image-container">
-                <img id="static-image" src="../images/4a.png" alt="Weighing Calcium Oxalate Precipitate">
-                <img id="animation-gif" class="hidden" src="../images/4a.gif" alt="Weighing and Calculation Animation">
-                
-                <!-- Transparent clickable area positioned over the analytical balance -->
-                <div id="equipment-clickable" class="clickable-area"></div>
-                
-                <!-- Arrow pointing to the clickable area -->
-                <div id="click-arrow" class="click-arrow">👇</div>
+                    <!-- Transparent clickable area positioned over the analytical balance -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow">👇</div>
+                </div>
+            </div>
+
+            <!-- Weighing results panel (initially hidden) -->
+            <div id="weighing-panel" class="weighing-panel hidden">
+                <h3>Weighing Results</h3>
+                <div class="weighing-results">
+                    <div class="weighing-step">
+                        <label>Mass of dried precipitate (CaC₂O₄):</label>
+                        <span id="measured-mass">1.141 g</span>
+                    </div>
+                    <div class="weighing-step">
+                        <label>Original cement sample mass:</label>
+                        <span id="original-mass">1.0000 g</span>
+                    </div>
+                </div>
+                <p class="instruction">The precipitate has been successfully weighed. Now click the "Calculate CaO %"
+                    button to determine the percentage of calcium oxide in the cement sample.</p>
+                <div class="action-button">
+                    <button id="calculate-button" class="calculate-btn">Calculate CaO %</button>
+                </div>
+            </div>
+
+            <!-- Calculation interface (initially hidden) -->
+            <div id="calculation-panel" class="calculation-panel hidden">
+                <h3>Calculation Results</h3>
+                <div class="calculation-steps">
+                    <div class="step-calculation">
+                        <label>Mass of dried precipitate (CaC₂O₄):</label>
+                        <span id="precipitate-mass">1.141 g</span>
+                    </div>
+                    <div class="step-calculation">
+                        <label>Original cement sample mass:</label>
+                        <span id="sample-mass">1.0000 g</span>
+                    </div>
+                    <div class="step-calculation">
+                        <label>Mass of CaO equivalent:</label>
+                        <span id="cao-mass">0.6396 g</span>
+                        <small>(1.141 × 0.5608)</small>
+                    </div>
+                    <div class="step-calculation result">
+                        <label>Percentage of CaO in cement:</label>
+                        <span id="cao-percentage">63.96%</span>
+                        <small>(0.6396/1.0000 × 100)</small>
+                    </div>
+                </div>
+                <div class="calculation-formula">
+                    <h4>Formula Used:</h4>
+                    <p>% CaO = (Mass of precipitate × 0.5608 / Original sample mass) × 100</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Complete Analysis</button>
             </div>
         </div>
 
-        <!-- Weighing results panel (initially hidden) -->
-        <div id="weighing-panel" class="weighing-panel hidden">
-            <h3>Weighing Results</h3>
-            <div class="weighing-results">
-                <div class="weighing-step">
-                    <label>Mass of dried precipitate (CaC₂O₄):</label>
-                    <span id="measured-mass">1.141 g</span>
-                </div>
-                <div class="weighing-step">
-                    <label>Original cement sample mass:</label>
-                    <span id="original-mass">1.0000 g</span>
-                </div>
-            </div>
-            <p class="instruction">The precipitate has been successfully weighed. Now click the "Calculate CaO %" button to determine the percentage of calcium oxide in the cement sample.</p>
-            <div class="action-button">
-                <button id="calculate-button" class="calculate-btn">Calculate CaO %</button>
-            </div>
-        </div>
-
-        <!-- Calculation interface (initially hidden) -->
-        <div id="calculation-panel" class="calculation-panel hidden">
-            <h3>Calculation Results</h3>
-            <div class="calculation-steps">
-                <div class="step-calculation">
-                    <label>Mass of dried precipitate (CaC₂O₄):</label>
-                    <span id="precipitate-mass">1.141 g</span>
-                </div>
-                <div class="step-calculation">
-                    <label>Original cement sample mass:</label>
-                    <span id="sample-mass">1.0000 g</span>
-                </div>
-                <div class="step-calculation">
-                    <label>Mass of CaO equivalent:</label>
-                    <span id="cao-mass">0.6396 g</span>
-                    <small>(1.141 × 0.5608)</small>
-                </div>
-                <div class="step-calculation result">
-                    <label>Percentage of CaO in cement:</label>
-                    <span id="cao-percentage">63.96%</span>
-                    <small>(0.6396/1.0000 × 100)</small>
-                </div>
-            </div>
-            <div class="calculation-formula">
-                <h4>Formula Used:</h4>
-                <p>% CaO = (Mass of precipitate × 0.5608 / Original sample mass) × 100</p>
-            </div>
-        </div>
-
-        <div class="navigation">
-            <button id="prev-step">← Previous Step</button>
-            <button id="next-step" class="hidden">Complete Analysis</button>
-        </div>
     </div>
 
     <script src="../js/step4.js"></script>
 </body>
+
 </html>

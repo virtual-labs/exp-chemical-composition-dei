@@ -1,9 +1,4 @@
-// JavaScript for Step 2 of Determination of Silicon Dioxide (SiO₂)
-if (localStorage.getItem('step1Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '1');
-  alert('Please complete Step 1 before proceeding to Step 2.');
-  window.location.href = '../index.html';
-}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -60,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 12000; // 12 seconds - evaporation takes longer
+        const gifDuration = 6000; // 12 seconds - evaporation takes longer
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {

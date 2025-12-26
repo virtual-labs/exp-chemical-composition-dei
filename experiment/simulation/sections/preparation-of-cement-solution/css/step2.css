@@ -1,9 +1,9 @@
 /* CSS for Step 4 of the Chemical Composition of Cement experiment */
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .procedure-section {
     background-color: #f8f9fa;
-    border: 2px solid #0088ff;
-    border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
@@ -141,4 +141,34 @@
     padding: 8px;
     border-radius: 3px;
     border-left: 4px solid #0088ff;
+}
+body {
+    background-color: #ffffff; /* White background */
+}
+
+/* Wrapper to center the step box */
+.step-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Light blue box for the entire step */
+.step-box {
+    background-color: #e6f2ff;
+    border: 2px solid #99ccff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Heading bar inside the box */
+.step-heading-bar {
+    background-color: #0088ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
