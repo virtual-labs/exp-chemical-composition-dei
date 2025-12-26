@@ -85,3 +85,24 @@ body {
 #start-experiment:hover {
     background-color: #0066cc;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .experiment-box {
+        padding: 10px;
+    }
+
+    .start-button {
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    .box-heading {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 300px) {
+    .box-heading {
+        font-size: 1em;
+    }
+}

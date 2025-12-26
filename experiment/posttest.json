@@ -4,13 +4,13 @@
     {
       "question": "Which oxide primarily contributes to early strength development in cement?",
       "answers": {
-        "a": "Fe₂O₃",
-        "b": "C₃A",
-        "c": "MgO",
-        "d": "CaO"
+          "a": "$\\text{Fe}_2\\text{O}_3$",
+          "b": "$\\text{C}_3\\text{A}$",
+          "c": "$\\text{MgO}$",
+          "d": "$\\text{CaO}$"
       },
       "explanations": {
-        "b": "C₃A (Tricalcium Aluminate) reacts quickly with water, contributing to early strength development in cement."
+          "b": "$\\text{C}_3\\text{A}$ (Tricalcium Aluminate) reacts quickly with water, contributing to early strength development in cement."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
