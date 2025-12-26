@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the analytical balance
         equipmentClickable.style.left = imgWidth * 0.50 + 'px';
-        equipmentClickable.style.top = imgHeight * 0.50 + 'px';
+        equipmentClickable.style.top = imgHeight * 0.40 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.25 + 'px';
         

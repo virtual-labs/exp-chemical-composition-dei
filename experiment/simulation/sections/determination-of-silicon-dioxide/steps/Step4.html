@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Determination of Magnesium Oxide</title>
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Determination of Silicon Dioxide - Step 4</title>
 </head>
 
 <body>
@@ -15,87 +16,29 @@
                 <h3 class="step">
                     Step <span class="step-number">4</span>:
                 </h3>
-                <p class="instructions" id="instructionsStep3e">
+                <p class="instructions" id="instructionsStep1">
                     Click on the cement sack to begin sample preparation.
                 </p>
             </div>
+
             <div class="step-image">
                 <div class="image-container">
-                    <!-- Drying phase images -->
-                    <img id="static-image" src="../images/4.png" alt="Oven for Drying SiO2 Residue">
-                    <img id="oven-opened" class="hidden" src="../images/4a.png" alt="Oven Opened for Sample Placement">
-                    <img id="drying-gif" class="hidden" src="../images/4a.gif" alt="Drying Process Animation">
-                    <img id="oven-closed" class="hidden" src="../images/4c.gif" alt="Oven Closed for Drying">
+                    <img id="static-image" src="../images/4.png" alt="Chemical Analysis of Cement Sample">
+                    <img id="animation-gif" class="hidden" src="../images/4.gif" alt="Chemical Analysis Animation">
 
-                    <!-- Weighing phase images -->
-                    <img id="weighing-image" class="hidden" src="../images/4d.png" alt="Weighing Dried SiO2 Residue">
-                    <img id="weighing-gif" class="hidden" src="../images/4b.gif" alt="Weighing Process Animation">
-
-                    <!-- Transparent clickable areas -->
-                    <div id="oven-clickable" class="clickable-area"></div>
-                    <div id="residue-clickable" class="clickable-area hidden"></div>
-                    <div id="weighing-clickable" class="clickable-area hidden"></div>
+                    <!-- Transparent clickable area positioned over the sample -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
 
                     <!-- Arrow pointing to the clickable area -->
                     <div id="click-arrow" class="click-arrow">👇</div>
                 </div>
             </div>
 
-            <!-- Weighing results panel (initially hidden) -->
-            <div id="weighing-panel" class="weighing-panel hidden">
-                <h3>Weighing Results</h3>
-                <div class="weighing-results">
-                    <div class="weighing-step">
-                        <label>Mass of dried SiO₂ residue:</label>
-                        <span id="measured-mass">0.240 g</span>
-                    </div>
-                    <div class="weighing-step">
-                        <label>Original cement sample mass:</label>
-                        <span id="original-mass">1.0000 g</span>
-                    </div>
-                </div>
-                <p class="instruction">The residue has been successfully weighed. Now click the "Calculate SiO₂ %"
-                    button to determine the percentage of silicon dioxide in the cement sample.</p>
-                <div class="action-button">
-                    <button id="calculate-button" class="calculate-btn">Calculate SiO₂ %</button>
-                </div>
-            </div>
-
-            <!-- Calculation interface (initially hidden) -->
-            <div id="calculation-panel" class="calculation-panel hidden">
-                <h3>Calculation Results</h3>
-                <div class="calculation-steps">
-                    <div class="step-calculation">
-                        <label>Mass of dried SiO₂ residue:</label>
-                        <span id="residue-mass">0.240 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Original cement sample mass:</label>
-                        <span id="sample-mass">1.0000 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Percentage calculation:</label>
-                        <span id="calculation-step">(0.240 / 1.0000) × 100</span>
-                    </div>
-                    <div class="step-calculation result">
-                        <label>Percentage of SiO₂ in cement:</label>
-                        <span id="sio2-percentage">24.0%</span>
-                        <small>(0.240/1.0000 × 100)</small>
-                    </div>
-                </div>
-                <div class="calculation-formula">
-                    <h4>Formula Used:</h4>
-                    <p>% SiO₂ = (Mass of dried SiO₂ residue / Original sample mass) × 100</p>
-                </div>
-            </div>
-
             <div class="navigation">
                 <button id="prev-step">Back</button>
-                <button id="next-step" class="hidden">Complete Analysis</button>
+                <button id="next-step" class="hidden">Next</button>
             </div>
         </div>
-
-
     </div>
 
     <script src="../js/step4.js"></script>

@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the filter funnel (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the funnel is in your image
-        equipmentClickable.style.left = imgWidth * 0.490 + 'px'; // 40% from the left
-        equipmentClickable.style.top = imgHeight * 0.20 + 'px'; // 25% from the top
+        equipmentClickable.style.left = imgWidth * 0.470 + 'px'; // 40% from the left
+        equipmentClickable.style.top = imgHeight * 0.25 + 'px'; // 25% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 30% of image width
         equipmentClickable.style.height = imgHeight * 0.20 + 'px'; // 35% of image height
         
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (longer for filtration, washing and drying process)
-        const gifDuration = 10000; // 12 seconds - longer process showing filtration, washing, and drying
+        const gifDuration = 4000; // 12 seconds - longer process showing filtration, washing, and drying
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {

@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgWidth = staticImage.offsetWidth;
         const imgHeight = staticImage.offsetHeight;
 
-        equipmentClickable.style.left = imgWidth * 0.87 + 'px';
-        equipmentClickable.style.top = imgHeight * 0.05 + 'px';
+        equipmentClickable.style.left = imgWidth * 0.83 + 'px';
+        equipmentClickable.style.top = imgHeight * 0.06 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.40 + 'px';
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.querySelector('.navigation button:first-child');
     if (backButton) {
         backButton.addEventListener('click', function() {
-            window.location.href = '../index.html';
+            window.location.href = '../../sections.html';
         });
     }
 });
