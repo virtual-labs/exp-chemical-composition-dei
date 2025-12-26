@@ -1,74 +1,40 @@
+// JavaScript for Step 6e
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all the image and UI elements
+    // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
-    const ovenOpened = document.getElementById('oven-opened');
-    const dryingGif = document.getElementById('drying-gif');
-    const ovenClosed = document.getElementById('oven-closed');
-    const weighingImage = document.getElementById('weighing-image');
-    const weighingGif = document.getElementById('weighing-gif');
-    const ovenClickable = document.getElementById('oven-clickable');
-    const residueClickable = document.getElementById('residue-clickable');
-    const weighingClickable = document.getElementById('weighing-clickable');
+    const animationGif = document.getElementById('animation-gif');
+    const equipmentClickable = document.getElementById('equipment-clickable');
     const clickArrow = document.getElementById('click-arrow');
     const nextStepButton = document.getElementById('next-step');
     const prevStepButton = document.getElementById('prev-step');
-    const weighingPanel = document.getElementById('weighing-panel');
-    const calculateButton = document.getElementById('calculate-button');
-    const calculationPanel = document.getElementById('calculation-panel');
-    const instructionText = document.getElementById('instruction-text');
-    
-    let currentPhase = 'oven-opening'; // Track current phase: 'oven-opening', 'residue-placement', 'weighing'
     
     // Set initial states
-    nextStepButton.classList.add('hidden');
+    nextStepButton.classList.add('hidden'); // Initially hide the next button
     
-    // Position the clickable areas over the equipment on the images
+    // Position the clickable area over the equipment on the image
     function positionClickableElements() {
         // Wait for the image to load to get its dimensions
         if (staticImage.complete) {
-            setupClickableAreas();
+            setupClickableArea();
         } else {
-            staticImage.onload = setupClickableAreas;
+            staticImage.onload = setupClickableArea;
         }
     }
     
-    function setupClickableAreas() {
+    function setupClickableArea() {
         const imgWidth = staticImage.offsetWidth;
         const imgHeight = staticImage.offsetHeight;
         
-        // Position clickable area over the oven (for opening phase)
-        ovenClickable.style.left = imgWidth * 0.60 + 'px';
-        ovenClickable.style.top = imgHeight * 0.50 + 'px';
-        ovenClickable.style.width = imgWidth * 0.05 + 'px';
-        ovenClickable.style.height = imgHeight * 0.05 + 'px';
+        // Position clickable area over the hot plate (adjust these values based on 5.png)
+        // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
+        equipmentClickable.style.left = imgWidth * 0.48 + 'px'; // 15% from the left
+        equipmentClickable.style.top = imgHeight * 0.50 + 'px'; // 60% from the top
+        equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
+        equipmentClickable.style.height = imgHeight * 0.2 + 'px'; // 15% of image height
         
-        // Position clickable area over the silicon residue (for placement phase)
-        residueClickable.style.left = imgWidth * 0.8 + 'px';
-        residueClickable.style.top = imgHeight * 0.6 + 'px';
-        residueClickable.style.width = imgWidth * 0.15 + 'px';
-        residueClickable.style.height = imgHeight * 0.2 + 'px';
-        
-        // Position clickable area over the analytical balance (for weighing phase)
-        weighingClickable.style.left = imgWidth * 0.72 + 'px';
-        weighingClickable.style.top = imgHeight * 0.32 + 'px';
-        weighingClickable.style.width = imgWidth * 0.15 + 'px';
-        weighingClickable.style.height = imgHeight * 0.15 + 'px';
-        
-        // Position the arrow to point to the active clickable area
-        updateArrowPosition();
-    }
-    
-    function updateArrowPosition() {
-        if (currentPhase === 'oven-opening') {
-            clickArrow.style.left = (parseFloat(ovenClickable.style.left) + parseFloat(ovenClickable.style.width)/2) + 'px';
-            clickArrow.style.top = (parseFloat(ovenClickable.style.top) - 30) + 'px';
-        } else if (currentPhase === 'residue-placement') {
-            clickArrow.style.left = (parseFloat(residueClickable.style.left) + parseFloat(residueClickable.style.width)/2) + 'px';
-            clickArrow.style.top = (parseFloat(residueClickable.style.top) - 30) + 'px';
-        } else if (currentPhase === 'weighing') {
-            clickArrow.style.left = (parseFloat(weighingClickable.style.left) + parseFloat(weighingClickable.style.width)/2) + 'px';
-            clickArrow.style.top = (parseFloat(weighingClickable.style.top) - 30) + 'px';
-        }
+        // Position the arrow to point to the clickable area
+        clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';
+        clickArrow.style.top = (parseFloat(equipmentClickable.style.top) - 30) + 'px'; // Position above the clickable area
     }
     
     // Call the positioning function
@@ -77,118 +43,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle window resize to reposition elements
     window.addEventListener('resize', positionClickableElements);
     
-    // Add click event listener to the oven clickable area (oven opening phase)
-    ovenClickable.addEventListener('click', function() {
-        if (currentPhase === 'oven-opening') {
-            // Hide the initial oven image and oven clickable elements
-            staticImage.classList.add('hidden');
-            ovenClickable.classList.add('hidden');
-            clickArrow.classList.add('hidden');
-         
-            // Show oven opened image
-            ovenOpened.classList.remove('hidden');
-            
-            // Show residue clickable area and arrow
-            residueClickable.classList.remove('hidden');
-            clickArrow.classList.remove('hidden');
-            
-            // Update phase and arrow position
-            currentPhase = 'residue-placement';
-            updateArrowPosition();
-        }
-    });
-    
-    // Add click event listener to the residue clickable area (residue placement phase)
-    residueClickable.addEventListener('click', function() {
-        if (currentPhase === 'residue-placement') {
-            // Hide the oven opened image and residue clickable elements
-            ovenOpened.classList.add('hidden');
-            residueClickable.classList.add('hidden');
-            clickArrow.classList.add('hidden');
-            
-            // Show the drying animation GIF
-            dryingGif.classList.remove('hidden');
-            
-            // Update instruction text
-            instructionText.textContent = 'Drying process in progress... Removing moisture from the residue.';
-            
-            // Duration for the drying animation
-            const dryingAnimationDuration = 6000; // 6 seconds
-            
-            setTimeout(function() {
-                 localStorage.setItem('step4ssCompleted', 'true');
-                // Hide drying gif, show oven closed
-                dryingGif.classList.add('hidden');
-                ovenClosed.classList.remove('hidden');
-                instructionText.textContent = 'Drying complete! The SiO₂ residue is now ready for weighing.';
-                
-                // Duration to show closed oven
-                const closedOvenDuration = 4000; // 4 seconds
-                
-                setTimeout(function() {
-                    // Start weighing phase
-                    ovenClosed.classList.add('hidden');
-                    weighingImage.classList.remove('hidden');
-                    weighingClickable.classList.remove('hidden');
-                    clickArrow.classList.remove('hidden');
-                    
-                    // Update phase and instruction
-                    currentPhase = 'weighing';
-                    instructionText.textContent = 'Now click on the analytical balance to weigh the dried silicon dioxide residue.';
-                    
-                    // Update arrow position for weighing
-                    updateArrowPosition();
-                }, closedOvenDuration);
-            }, dryingAnimationDuration);
-        }
-    });
-    
-    // Add click event listener to the weighing clickable area
-    weighingClickable.addEventListener('click', function() {
-        if (currentPhase === 'weighing') {
-            // Hide the weighing image and clickable elements
-            weighingImage.classList.add('hidden');
-            weighingClickable.classList.add('hidden');
-            clickArrow.classList.add('hidden');
-            
-            // Show the weighing animation GIF
-            weighingGif.classList.remove('hidden');
-            
-            // Update instruction text
-            instructionText.textContent = 'Weighing in progress... Determining the mass of dried SiO₂ residue.';
-            
-            // Calculate the duration of the weighing GIF
-            const weighingDuration = 8000; // 8 seconds
-            
-            // After the weighing animation completes, show the weighing panel
-            setTimeout(function() {
-                weighingGif.classList.add('hidden');
-                weighingPanel.classList.remove('hidden');
-                instructionText.textContent = 'Weighing completed! Results are displayed below.';
-            }, weighingDuration);
-        }
-    });
-    
-    // Add click event listener for calculate button
-    calculateButton.addEventListener('click', function() {
-        // Show the calculation panel
-        calculationPanel.classList.remove('hidden');
+    // Add click event listener to the clickable area
+    equipmentClickable.addEventListener('click', function() {
+        // Hide the static image and clickable elements
+        staticImage.classList.add('hidden');
+        equipmentClickable.classList.add('hidden');
+        clickArrow.classList.add('hidden');
         
-        // Show the next step button after calculations
+        // Show the animation GIF
+        animationGif.classList.remove('hidden');
+        
+        // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
+        const gifDuration = 3000; // 8 seconds - longer duration for complete heating and dissolution process
+        
+        // After the GIF animation completes, show the next step button
         setTimeout(function() {
             nextStepButton.classList.remove('hidden');
-        }, 1000);
+        }, gifDuration);
     });
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        // Navigate back to the main determination section or show completion message
-        alert('Silicon dioxide determination analysis complete! The cement sample contains 24.0% SiO₂.');
-        window.location.href = '../index.html';
+        window.location.href = 'Step4a.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3.html';
+        window.location.href = 'Step3a.html';
     });
 });

@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Chemical Composition of Cement</title>
     <link rel="stylesheet" href="\experiment\simulation\css\main.css">
 </head>
+
 <body>
     <div class="content">
         <div class="experiment-box" style="height: 600px;">
             <!-- Heading bar -->
             <div class="box-heading">Chemical Composition of Cement</div>
             <div class="container1">
-                <div class="objective">
-                    <h3>Objective:</h3>
-                    <p>To determine the chemical composition of a given sample of cement.</p>
+                <div class="content-container" id="mainPage" style="visibility: visible;">
+                    <h3 class="instruction" style="font-size: 25px; width: 500px;">Choose any of the following tests:
+                    </h3>
+                    <div>
+
+                        <img id="arrow" src="../images/arrow.gif" style="visibility: hidden ;" height="30px">
+
+                    </div>
+                    <div class="container-of-list">
+                        <ol class="list">
+                            <li class="list-item" style="margin-bottom: 20px;"><a class="list-link"
+                                    href="determination-of-calcium-oxide/steps/Step1.html">Determination of
+                                    Calcium Oxide </a></li>
+
+                            <li class="list-item" style="margin-bottom: 20px;"><a class="list-link"
+                                    href="determination-of-Iron_oxide-and-Aluminum_oxide/steps/Step1.html">Determination of Iron Oxide and Aluminum Oxide </a></li>
+
+                            <li class="list-item" style="margin-bottom: 20px;"><a class="list-link"
+                                    href="determination-of-Magnesium-oxide/steps/Step1.html">Determination of Magnesium Oxide </a></li>
+
+                            <li class="list-item" style="margin-bottom: 20px;"><a class="list-link"
+                                    href="determination-of-Silicon-dioxide/steps/Step1.html">Determination of Silicon Dioxide </a></li>
+                    </div>
                 </div>
 
-                <div class="instruments">
-                    <h3>Material used:</h3>
-                    <p>Muffle furnace, crucibles, desiccator, analytical balance, glassware, pH meter, and chemical reagents.</p>
-                </div>
             </div>
-
         </div>
-    </div>
+         
 
-    <script src="./js/main.js"></script>
+        <script src="./js/main.js"></script>
 </body>
+
 </html>

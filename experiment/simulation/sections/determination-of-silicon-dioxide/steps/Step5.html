@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Determination of Iron Oxide and Aluminium Oxide </title>
+</head>
+
+<body>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical Composition of Cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">5</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep3e">
+                    Click on the cement sack to begin sample preparation.
+                </p>
+            </div>
+
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/4d.png" alt="Weighing Precipitate">
+                    <img id="animation-gif" class="hidden" src="../images/4b.gif"
+                        alt="Weighing and Calculation Animation">
+
+                    <!-- Transparent clickable area positioned over the analytical balance -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow">👇</div>
+                </div>
+            </div>
+            <!-- Weighing results panel (initially hidden) -->
+            <div id="weighing-panel" class="weighing-panel hidden">
+                <h3>Weighing Results</h3>
+                <div class="weighing-results">
+                    <div class="weighing-step">
+                        <label>Mass of dried SiO₂ residue:</label>
+                        <span id="measured-mass">0.240 g</span>
+                    </div>
+                    <div class="weighing-step">
+                        <label>Original cement sample mass:</label>
+                        <span id="original-mass">1.0000 g</span>
+                    </div>
+                </div>
+                <p class="instruction">The residue has been successfully weighed. Now click the "Calculate SiO₂ %"
+                    button to determine the percentage of silicon dioxide in the cement sample.</p>
+                <div class="action-button">
+                    <button id="calculate-button" class="calculate-btn">Calculate SiO₂ %</button>
+                </div>
+            </div>
+
+            <!-- Calculation interface (initially hidden) -->
+            <div id="calculation-panel" class="calculation-panel hidden">
+                <h3>Calculation Results</h3>
+                <div class="calculation-steps">
+                    <div class="step-calculation">
+                        <label>Mass of dried SiO₂ residue:</label>
+                        <span id="residue-mass">0.240 g</span>
+                    </div>
+                    <div class="step-calculation">
+                        <label>Original cement sample mass:</label>
+                        <span id="sample-mass">1.0000 g</span>
+                    </div>
+                    <div class="step-calculation">
+                        <label>Percentage calculation:</label>
+                        <span id="calculation-step">(0.240 / 1.0000) × 100</span>
+                    </div>
+                    <div class="step-calculation result">
+                        <label>Percentage of SiO₂ in cement:</label>
+                        <span id="sio2-percentage">24.0%</span>
+                        <small>(0.240/1.0000 × 100)</small>
+                    </div>
+                </div>
+                <div class="calculation-formula">
+                    <h4>Formula Used:</h4>
+                    <p>% SiO₂ = (Mass of dried SiO₂ residue / Original sample mass) × 100</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Complete Analysis</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="../js/step5.js"></script>
+</body>
+
+</html>

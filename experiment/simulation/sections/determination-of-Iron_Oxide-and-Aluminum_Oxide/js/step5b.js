@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Position clickable area over the washing equipment (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
         equipmentClickable.style.left = imgWidth * 0.50 + 'px'; // 40% from the left
-        equipmentClickable.style.top = imgHeight * 0.50 + 'px'; // 25% from the top
+        equipmentClickable.style.top = imgHeight * 0.40 + 'px'; // 25% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 30% of image width
         equipmentClickable.style.height = imgHeight * 0.25 + 'px'; // 35% of image height
         
