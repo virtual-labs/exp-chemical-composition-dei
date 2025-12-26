@@ -1,9 +1,9 @@
 /* CSS for Step 4 of the Chemical Composition of Cement experiment */
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .procedure-section {
     background-color: #f8f9fa;
-    border: 2px solid #0088ff;
-    border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;

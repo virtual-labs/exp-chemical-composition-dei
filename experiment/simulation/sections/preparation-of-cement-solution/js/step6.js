@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 9000; // 6 seconds - for complete filtration process
+        const gifDuration = 6000; // 6 seconds - for complete filtration process
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {

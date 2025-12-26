@@ -1,53 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Chemical Composition of Cement - Step 7</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chemical Composition of Cement - Step 6</title>
     <link rel="stylesheet" href="../../../css/main.css">
-    <link rel="stylesheet" href="../css/step7.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical Composition of Cement</div>
         <div class="step-box">
-            <!-- Heading bar -->
-            <div class="step-heading-bar">Preparation of Cement Solution</div>
-
-            <div class="step-header">
-                <h2>Step 7: Collecting the Filtrate</h2>
-            </div>
-
-        <div class="step-image">
-            <div class="image-container">
-                <img id="static-image" src="../images/7.jpeg" alt="Collecting Filtrate in Clean Beaker">
-                <img id="animation-gif" class="hidden" src="../images/7.gif" alt="Filtrate Collection Animation">
-                
-                <!-- Transparent clickable area positioned over the clean beaker -->
-                <div id="equipment-clickable" class="clickable-area"></div>
-                
-                <!-- Arrow pointing to the clickable area -->
-                <div id="click-arrow" class="click-arrow">👇</div>
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">7</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep1">
+                    Click on the cement sack to begin sample preparation.
+                </p>
             </div>
 
             <div class="step-image">
                 <div class="image-container">
-                    <!-- Static image shown first -->
-                    <img id="static-image" src="../images/7.jpeg" alt="Collecting filtrate in a clean beaker">
+                    <img id="static-image" src="../images/7.png" alt="Chemical Analysis of Cement Sample">
+                    <img id="animation-gif" class="hidden" src="../images/7.gif" alt="Chemical Analysis Animation">
 
-                    <!-- Animation toggled by JS -->
-                    <img id="animation-gif" class="hidden" src="../images/7.gif" alt="Filtrate collection animation">
+                    <!-- Transparent clickable area positioned over the sample -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
 
-                    <!-- Click target (JS will size/position via CSS) -->
-                    <div id="equipment-clickable" class="clickable-area" role="button" aria-label="Collect filtrate"></div>
-
-                    <!-- Arrow indicator -->
-                    <div id="click-arrow" class="click-arrow" aria-hidden="true">👇</div>
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow">👇</div>
                 </div>
             </div>
 
             <div class="navigation">
-                <button id="prev-step" type="button">Previous Step</button>
-                <button id="next-step" type="button" class="hidden">Next Step</button>
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Next</button>
             </div>
         </div>
     </div>

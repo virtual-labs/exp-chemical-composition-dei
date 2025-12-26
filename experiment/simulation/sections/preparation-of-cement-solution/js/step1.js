@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 5000; // 5 seconds - replace with actual duration of your GIF
+        const gifDuration = 2500; // 5 seconds - replace with actual duration of your GIF
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for back button
     if (backButton) {
         backButton.addEventListener('click', function() {
-            window.location.href = '../index.html';
+            window.location.href = '../../../index.html';
         });
     }
 });

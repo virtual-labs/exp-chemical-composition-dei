@@ -1,9 +1,4 @@
-// JavaScript for Step 4 of the Chemical Composition of Cement experiment
-if (localStorage.getItem('step3Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '3');
-  alert('Please complete Step 3 before proceeding to Step 4.');
-  window.location.href = '../index.html';
-}
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the static image, animation GIF, clickable area and arrow elements
@@ -33,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the acid addition area (adjust these values based on 4.png)
         // These are approximate values - you'll need to adjust them based on where the beaker/acid is in your image
-        equipmentClickable.style.left = imgWidth * 0.410 + 'px'; // 45% from the left
-        equipmentClickable.style.top = imgHeight * 0.441 + 'px'; // 40% from the top
+        equipmentClickable.style.left = imgWidth * 0.360 + 'px'; // 45% from the left
+        equipmentClickable.style.top = imgHeight * 0.43 + 'px'; // 40% from the top
         equipmentClickable.style.width = imgWidth * 0.07 + 'px'; // 25% of image width
         equipmentClickable.style.height = imgHeight * 0.25 + 'px'; // 25% of image height
         
@@ -60,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 10000; // 4 seconds - replace with actual duration of your GIF
+        const gifDuration = 8000; // 4 seconds - replace with actual duration of your GIF
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
