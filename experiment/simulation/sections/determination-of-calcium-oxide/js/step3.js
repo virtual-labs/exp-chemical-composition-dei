@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (longer for filtration, washing and drying process)
-        const gifDuration = 10000; // 12 seconds - longer process showing filtration, washing, and drying
+        const gifDuration = 5000; // 12 seconds - longer process showing filtration, washing, and drying
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {

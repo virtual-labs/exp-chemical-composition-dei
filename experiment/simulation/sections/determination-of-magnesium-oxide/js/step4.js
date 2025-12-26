@@ -1,8 +1,3 @@
-if (localStorage.getItem('step3Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '3');
-  alert('Please complete Step 3 before proceeding to Step 4.');
-  window.location.href = '../index.html';
-}
 document.addEventListener('DOMContentLoaded', function() {
     // Get all necessary elements
     const staticImage = document.getElementById('static-image');
