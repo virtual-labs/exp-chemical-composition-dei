@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
-        alert('Magnesium oxide determination analysis complete! The cement sample contains 0.72% MgO.');
+        alert('Magnesium oxide determination analysis complete! The cement sample contains 24% SiO₂.');
         window.location.href = '../../sections.html';
     });
     

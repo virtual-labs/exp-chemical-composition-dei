@@ -8,7 +8,8 @@
   };
 </script>
 
-## Theory
+
+# Theory
 
 Cement is a key ingredient in the construction industry due to its ability to bind materials together, contributing to the strength and durability of concrete structures. Its primary chemical components include calcium, silicon, aluminum, iron, and other minor elements. The determination of these components provides essential information about the cement's quality, which affects its performance in construction applications. The chemical composition of cement directly influences critical properties such as strength, workability, setting time, and durability.
 
@@ -20,7 +21,7 @@ Cement is a complex mixture of various compounds primarily composed of oxides th
 
 ### 1. Calcium Oxide (CaO)
 
-- **Most abundant oxide in cement** (typically 60–67% by mass).
+- **Most abundant oxide in cement** (typically 60--67\% by mass).
 - Reacts exothermically with water to form calcium hydroxide, which then participates in the formation of calcium silicate hydrates (C-S-H), the primary binding phase.
 - **Primary contributor to strength development** through C-S-H gel formation.
 - Excess free CaO (free lime) may lead to delayed expansive reactions, causing cracking and affecting long-term durability.
@@ -53,12 +54,12 @@ $$
 
 ---
 
-### 2. Silicon Dioxide (SiO₂)
+### 2. Silicon Dioxide (SiO$_2$)
 
-- **Second most abundant oxide** (typically 17–25% by mass).
+- **Second most abundant oxide** (typically 17--25\% by mass).
 - Reacts with CaO to form C-S-H, the main binding phase responsible for cement strength and cohesion.
 - Enhances long-term strength development and resistance to chemical attack.
-- Balanced SiO₂ content ensures proper setting time, workability, and durability.
+- Balanced SiO$_2$ content ensures proper setting time, workability, and durability.
 - Higher silica content generally improves later-age strength and reduces permeability.
 
 **Key Reactions:**
@@ -86,9 +87,9 @@ $$
 
 ---
 
-### 3. Aluminum Oxide (Al₂O₃)
+### 3. Aluminum Oxide (Al$_2$O$_3$)
 
-- Typically comprises 3–8% by mass.
+- Typically comprises 3--8\% by mass.
 - **Contributes to formation of calcium aluminates**, accelerating initial setting and early strength.
 - Excess increases heat of hydration and sulfate susceptibility.
 - Gypsum is added to control $\text{C}_3\text{A}$ reactivity.
@@ -118,9 +119,9 @@ $$
 
 ---
 
-### 4. Iron Oxide (Fe₂O₃)
+### 4. Iron Oxide (Fe$_2$O$_3$)
 
-- Typically 0.5–6% by mass.
+- Typically 0.5--6\% by mass.
 - Forms tetracalcium aluminoferrite ($\text{C}_4\text{AF}$).
 - Reduces early heat of hydration and acts as a flux.
 
@@ -135,7 +136,7 @@ $$
 
 ### 5. Magnesium Oxide (MgO)
 
-- Present in small quantities (0.1–4%).
+- Present in small quantities (0.1--4\%).
 - Excess causes delayed expansion and cracking.
 
 **Key Reactions:**
@@ -150,23 +151,10 @@ $$
 \rightarrow \text{Mg(OH)}_2 \; (24.6 \text{ cm}^3/\text{mol})
 $$
 
-This $\approx 120\%$ volume increase causes internal stress.
+This $\sim 120\%$ volume increase causes internal stress.
 
 ---
 
-### Chemical Composition of Cement
-
-| Oxide | Chemical Formula | Function in Cement |
-|------|------------------|--------------------|
-| Calcium Oxide | $\text{CaO}$ | Strength formation |
-| Silicon Dioxide | $\text{SiO}_2$ | Durability & strength |
-| Aluminum Oxide | $\text{Al}_2\text{O}_3$ | Early strength |
-| Iron Oxide | $\text{Fe}_2\text{O}_3$ | Color & flux |
-| Magnesium Oxide | $\text{MgO}$ | Soundness |
-| Sulfur Trioxide | $\text{SO}_3$ | Setting control |
-| Alkalis | $\text{Na}_2\text{O, K}_2\text{O}$ | ASR risk |
-
----
 
 ### Conclusion
 
