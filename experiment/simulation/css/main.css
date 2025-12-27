@@ -11,6 +11,7 @@ body {
 
 .content {
     max-width: 800px;
+    max-height: 600px;
     margin: 0 auto;
 }
 
@@ -88,7 +89,7 @@ body {
 
 /* MOBILE */
 @media (max-width: 575px) {
-  .experiment-box {
+  .content,.step-wrapper {
     zoom: 40%;
     width: 800px;
     height: 600px;
@@ -97,7 +98,7 @@ body {
 
 /* SMALL DEVICES */
 @media (min-width: 576px) and (max-width: 767px) {
-  .experiment-box,.step-wrapper {
+  .content,.step-wrapper {
     zoom: 65%;
     width: 800px;
     height: 600px;
@@ -106,7 +107,7 @@ body {
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 991px) {
-  .experiment-box,.step-wrapper {
+  .content,.step-wrapper {
     zoom: 80%;
     width: 800px;
     height: 600px;
@@ -115,7 +116,7 @@ body {
 
 /* SMALL DESKTOP */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .experiment-box,.step-wrapper {
+  .content,.step-wrapper {
     zoom: 90%;
     width: 800px;
     height: 600px;
@@ -124,7 +125,7 @@ body {
 
 /* LANDSCAPE FIX */
 @media (max-width: 767px) and (orientation: landscape) {
-  .experiment-box,.step-wrapper {
+  .content,.step-wrapper {
     zoom: 55%;
   }
 }
