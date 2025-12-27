@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for back button
     if (backButton) {
         backButton.addEventListener('click', function() {
-            window.location.href = '../index.html';
+            window.location.href = '../../sections.html';
         });
     }
 });

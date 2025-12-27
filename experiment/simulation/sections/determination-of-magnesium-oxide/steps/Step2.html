@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Determination of Magnesium Oxide</title>
     <link rel="stylesheet" href="../../../css/main.css">
-    <link rel="stylesheet" href="../css/step2.css">
-    <title>Determination of Magnesium Oxide - Step 2</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="step-container">
-        <div class="procedure-section">
-            <h3 class="section-header">Determination of Magnesium Oxide</h3>
-        </div>
-
-        <div class="step-header">
-            <h2>Step 2: Filtration of Precipitate</h2>
-        </div>
-
-        <div class="step-content">
-            <h3>About this step:</h3>
-            <p>In this step, we will separate the magnesium ammonium phosphate precipitate from the liquid by
-                filtration.</p>
-            <p>Use a clean funnel with filter paper, and pour the mixture carefully to retain all the precipitate on the
-                filter paper.
-                This process isolates the magnesium compound from other soluble ions in the filtrate.</p>
-            <p class="instruction">Click on the filter setup to pour the solution and collect the solid residue on the filter paper.</p>
-        </div>
-
-        <div class="step-image">
-            <div class="image-container">
-                <img id="static-image" src="../images/2.jpeg" alt="Filtering Precipitate">
-                <img id="animation-gif" class="hidden" src="../images/2.gif" alt="Filtration Process Animation">
-
-                <!-- Transparent clickable area positioned over the filter funnel -->
-                <div id="equipment-clickable" class="clickable-area"></div>
-
-                <!-- Arrow pointing to the clickable area -->
-                <div id="click-arrow" class="click-arrow">👇</div>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical Composition of Cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">2</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep1">
+                    Click on the cement sack to begin sample preparation.
+                </p>
             </div>
-        </div>
 
-        <div class="navigation">
-            <button id="prev-step">← Previous Step</button>
-            <button id="next-step" class="hidden">Next Step→</button>
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/2.png" alt="Chemical Analysis of Cement Sample">
+                    <img id="animation-gif" class="hidden" src="../images/2.gif" alt="Chemical Analysis Animation">
+
+                    <!-- Transparent clickable area positioned over the sample -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow">👇</div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Next</button>
+            </div>
         </div>
     </div>
 
     <script src="../js/step2.js"></script>
 </body>
-
 </html>

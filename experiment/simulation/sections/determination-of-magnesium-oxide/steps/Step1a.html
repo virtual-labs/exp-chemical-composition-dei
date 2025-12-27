@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <title>Determination of Magnesium Oxide</title>
     <link rel="stylesheet" href="../../../css/main.css">
-    <link rel="stylesheet" href="../css/step1a.css">
-    <title>Determination of Magnesium Oxide - Step 1a</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <div class="step-container">
-        <div class="procedure-section">
-            <h3 class="section-header">Determination of Magnesium Oxide</h3>
-        </div>
-        
-        <div class="step-header">
-            <h2>Step 1a: Precipitate Formation</h2>
-        </div>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical Composition of Cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">1</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep1">
+                    Click on the cement sack to begin sample preparation.
+                </p>
+            </div>
 
-        <div class="step-content">
-            <h3>About this step:</h3>
-            <p>In this step, the remaining filtrate obtained after the removal of iron (Fe) and aluminium (Al) oxides in earlier parts of the analysis is taken for the determination of magnesium oxide (MgO).</p>
-            <p>The reaction that occurs is: Mg²⁺ + NH₄⁺ + HPO₄²⁻ → MgNH₄PO₄ ↓ (white precipitate)</p>
-            <p>This forms the white crystalline precipitate of magnesium ammonium phosphate (MgNH₄PO₄), which will later be filtered, </p>
-            <p class="instruction">Click on the beaker containing the precipitate.</p>
-        </div>
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/1a.png" alt="Chemical Analysis of Cement Sample">
+                    <img id="animation-gif" class="hidden" src="../images/1a.png" alt="Chemical Analysis Animation">
 
-        <div class="step-image">
-            <div class="image-container">
-                <img id="static-image" src="../images/1a.png" alt="precipitate">
-                <img id="animation-gif" class="hidden" src="../images/1a.png" alt="precipitate formation">
-                
-                <!-- Transparent clickable area positioned over the NH4OH bottle -->
-                <div id="equipment-clickable" class="clickable-area"></div>
-                
-                <!-- Arrow pointing to the clickable area -->
-                <div id="click-arrow" class="click-arrow">👇</div>
+                    <!-- Transparent clickable area positioned over the sample -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow">👇</div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Next</button>
             </div>
         </div>
-
-        <div class="navigation">
-            <button>Back to Home</button>
-            <button id="next-step" class="hidden">Next Step</button>
-        </div>
     </div>
+
     <script src="../js/step1a.js"></script>
 </body>
 </html>

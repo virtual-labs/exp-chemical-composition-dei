@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6ef.html';
+        window.location.href = 'Step5.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step6d.html';
+        window.location.href = 'Step4.html';
     });
 });

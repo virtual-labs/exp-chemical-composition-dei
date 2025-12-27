@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the analytical balance
         equipmentClickable.style.left = imgWidth * 0.715 + 'px';
-        equipmentClickable.style.top = imgHeight * 0.25 + 'px';
+        equipmentClickable.style.top = imgHeight * 0.35 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.25 + 'px';
         
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
         alert('Al₂O₃ determination analysis complete! The cement sample contains 8.0% Al₂O₃.');
-        window.location.href = '../index.html';
+        window.location.href = '../../sections.html';
     });
     
     // Add click event listener for prev-step button

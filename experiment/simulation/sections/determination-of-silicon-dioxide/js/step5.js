@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgHeight = staticImage.offsetHeight;
         
         // Position clickable area over the analytical balance
-        equipmentClickable.style.left = imgWidth * 0.68 + 'px';
-        equipmentClickable.style.top = imgHeight * 0.32 + 'px';
+        equipmentClickable.style.left = imgWidth * 0.715 + 'px';
+        equipmentClickable.style.top = imgHeight * 0.30 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.25 + 'px';
         
@@ -142,12 +142,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
-        alert('Calcium oxide determination analysis complete! The cement sample contains 64.0% CaO.');
+        alert('Magnesium oxide determination analysis complete! The cement sample contains 0.72% MgO.');
         window.location.href = '../../sections.html';
     });
     
     // Add click event listener for prev-step button
     prevStepButton.addEventListener('click', function() {
-        window.location.href = 'Step3e.html';
+        window.location.href = 'Step4.html';
     });
 });

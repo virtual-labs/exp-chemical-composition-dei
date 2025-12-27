@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Position clickable area over the hot plate (adjust these values based on 5.png)
         // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
-        equipmentClickable.style.left = imgWidth * 0.490 + 'px'; // 40% from the left
+        equipmentClickable.style.left = imgWidth * 0.470 + 'px'; // 40% from the left
         equipmentClickable.style.top = imgHeight * 0.20 + 'px'; // 25% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 30% of image width
         equipmentClickable.style.height = imgHeight * 0.20 + 'px'; // 35% of image height

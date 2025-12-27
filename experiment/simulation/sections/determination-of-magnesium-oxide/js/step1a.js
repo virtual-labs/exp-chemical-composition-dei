@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the ammonium oxalate bottle (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the bottle is in your image
-        equipmentClickable.style.left = imgWidth * 0.50 + 'px'; // 20% from the left
-        equipmentClickable.style.top = imgHeight * 0.27 + 'px'; // 15% from the top
+        equipmentClickable.style.left = imgWidth * 0.45 + 'px'; // 20% from the left
+        equipmentClickable.style.top = imgHeight * 0.50 + 'px'; // 15% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
         equipmentClickable.style.height = imgHeight * 0.50 + 'px'; // 45% of image height
         

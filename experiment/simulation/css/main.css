@@ -86,23 +86,50 @@ body {
     background-color: #0066cc;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .experiment-box {
-        padding: 10px;
-    }
+/* MOBILE */
+@media (max-width: 575px) {
+  .experiment-box {
+    zoom: 40%;
+    width: 800px;
+    height: 600px;
+  }
+}
 
-    .start-button {
-        text-align: center;
-    }
+/* SMALL DEVICES */
+@media (min-width: 576px) and (max-width: 767px) {
+  .experiment-box,.step-wrapper {
+    zoom: 65%;
+    width: 800px;
+    height: 600px;
+  }
 }
-@media (max-width: 400px) {
-    .box-heading {
-        font-size: 1.2em;
-    }
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+  .experiment-box,.step-wrapper {
+    zoom: 80%;
+    width: 800px;
+    height: 600px;
+  }
 }
-@media (max-width: 300px) {
-    .box-heading {
-        font-size: 1em;
-    }
+
+/* SMALL DESKTOP */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .experiment-box,.step-wrapper {
+    zoom: 90%;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+/* LANDSCAPE FIX */
+@media (max-width: 767px) and (orientation: landscape) {
+  .experiment-box,.step-wrapper {
+    zoom: 55%;
+  }
+}
+
+/* SAFETY */
+body {
+  overflow-x: hidden;
 }
