@@ -33,17 +33,30 @@ Click on the screen to set the temperature.
 
 
 **c) Determination of Silicon Dioxide:**
-1. Click on the pipette to Acidify a portion of the filtrate with dilute nitric acid $(\text{HNO}_3)$.
+1. Click on the pipette to acidify a portion of the filtrate with dilute nitric acid $(\text{HNO}_3)$.
 2. Click on the beaker to heat the solution to dryness to convert silica into insoluble $\text{SiO}_2$.
-3. Filter, wash, dry, and weigh the residue to determine the percentage of $\text{SiO}_2$.
+3. Click on the filter paper to filter the solution.
+4. Click on the knob of the oven to open it.    
+Click on the crucible to heat the precipitate.     
+Click on the screen to set the temperature.
+5. Click on the crucible to weigh the sample and view results.
 
 
 **d) Determination of Iron Oxide and Aluminum Oxide:**
-1. To another portion of the filtrate, add ammonium hydroxide $(\text{NH}_4\text{OH})$ until a precipitate forms.
-2. Filter the precipitate, which contains $\text{Fe(OH)}_3$ and $\text{Al(OH)}_3$.
-3. Dissolve the precipitate in dilute $\text{HCl}$ and determine $\text{Fe}_2\text{O}_3$ and $\text{Al}_2\text{O}_3$ using volumetric titration with potassium permanganate $(\text{KMnO}_4)$ and sodium hydroxide $(\text{NaOH})$, respectively.
+1. Click on the pipette to add ammonium hydroxide $(\text{NH}_4\text{OH})$ until a precipitate forms.
+2. Click on the filter paper to filter the precipitate, which contains $\text{Fe(OH)}_3$ and $\text{Al(OH)}_3$.
+3. Click on the measuring cylinder to dissolve the precipitate in dilute $\text{HCl}$.
+Click on the crucible to transfer the ppt to the beaker.
+Click on the pipette to add nitric acid and dil. sulphuric acid.
+Click on the beaker to transfer the solution to a conical flask.
+4. Click on the knob to start titration.
+5. Observe the results after calculation.
 
 **e) Determination of Magnesium Oxide:**
-1. Use the remaining filtrate to precipitate magnesium ammonium phosphate $(\text{MgNH}_4\text{PO}_4)$ by adding ammonium phosphate $((\text{NH}_4)_2\text{HPO}_4)$.
-2. Click on the sample to filter, dry, and weigh the precipitate to calculate the percentage of $\text{MgO}$.
-
+1. Click on the pipette to add diammonium phosphate.
+2. Click on the beaker to observe the precipitate.
+3. Click on the filter paper to filter the solution and transfer it to a clean crucible.
+4. Click on the crucible to start drying in the oven.
+5. Click on the screen to set the temperature.
+6. Click on the crucible to weigh it.
+7. Observe the % of MgO after calculations.
