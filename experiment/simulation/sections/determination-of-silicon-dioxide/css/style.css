@@ -31,9 +31,7 @@
 
 .click-arrow {
     position: absolute;
-    font-size: 24px;
-    color: #0088ff;
-    animation: bounce 1s infinite;
+    width: 50px;
     cursor: pointer;
 }
 
