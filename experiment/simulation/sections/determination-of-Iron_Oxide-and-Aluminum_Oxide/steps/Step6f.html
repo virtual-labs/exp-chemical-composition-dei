@@ -28,7 +28,7 @@
                 <div id="equipment-clickable" class="clickable-area"></div>
                 
                 <!-- Arrow pointing to the clickable area -->
-                <div id="click-arrow" class="click-arrow">👇</div>
+                <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
             </div>
         </div>
 
@@ -45,33 +45,32 @@
                     <span id="original-mass">1.0000 g</span>
                 </div>
             </div>
-            <p class="instruction">The precipitate has been successfully weighed. Now click the "Calculate Al₂O₃ %" button to determine the percentage of calcium oxide in the cement sample.</p>
+            <p class="instruction">The precipitate has been successfully weighed. Now Calculate Al₂O₃ %</p>
             <div class="action-button">
                 <button id="calculate-button" class="calculate-btn">Calculate Al₂O₃ %</button>
             </div>
         </div>
 
-        <!-- Calculation interface (initially hidden) -->
+                <!-- Calculation interface (initially hidden) -->
         <div id="calculation-panel" class="calculation-panel hidden">
             <h3>Calculation Results</h3>
             <div class="calculation-steps">
-                <div class="step-calculation">
-                    <label>Mass of dried precipitate (Al₂O₃):</label>
-                    <span id="precipitate-mass">0.080 g</span>
-                </div>
-                <div class="step-calculation">
-                    <label>Original cement sample mass:</label>
-                    <span id="sample-mass">1.0000 g</span>
-                </div>
-                <div class="step-calculation">
-                    <label>Mass ofAl₂O₃ equivalent:</label>
-                    <span id="Al₂O₃-mass">0.080 g</span>
-
+               <div class="step-calculation result">
+                    <label>Al₂O₃ % in cement (Sample 1):</label>
+                    <span id="Al₂O₃-percentage">8.01%</span>
                 </div>
                 <div class="step-calculation result">
-                    <label>Percentage of Al₂O₃ in cement:</label>
-                    <span id="Al₂O₃-percentage">8.0%</span>
-                    <small>(0.080/1) × 100</small>
+                    <label>Al₂O₃ % in cement (Sample 2):</label>
+                    <span id="Al₂O₃-percentage">7.98%</span>
+                </div>
+                <div class="step-calculation result">
+                    <label>Al₂O₃ % in cement (Sample 3):</label>
+                    <span id="Al₂O₃-percentage">8.02%</span>
+                </div>
+                <br>
+                <div class="step-calculation result">
+                    <label>Average % Al₂O₃ in cement:</label>
+                    <span id="average-Al₂O₃-percentage">8.00%</span>
                 </div>
             </div>
             <div class="calculation-formula">
@@ -81,7 +80,7 @@
         </div>
 
         <div class="navigation">
-            <button id="prev-step">← Previous Step</button>
+            <button id="prev-step">Back</button>
             <button id="next-step" class="hidden">Complete Analysis</button>
         </div>
     </div>
