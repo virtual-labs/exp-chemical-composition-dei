@@ -97,13 +97,13 @@ $$
 Rapid C₃A hydration (uncontrolled):
 
 <p align="center">
-  <img src="images/1.PNG" alt="Equation" height = 30>
+  <img src="images/1.PNG" alt="Equation" height = 50px>
 </p>
 
 Controlled reaction with gypsum (ettringite formation):
 
 <p align="center">
-  <img src="images/2.PNG" alt="Equation" height = 30>
+  <img src="images/2.PNG" alt="Equation" height = 50px>
 </p>
 
 
@@ -116,7 +116,7 @@ Controlled reaction with gypsum (ettringite formation):
 **Key Reaction:**
 
 <p align="center">
-  <img src="images/3.PNG" alt="Equation" height = 30>
+  <img src="images/3.PNG" alt="Equation" height = 50px>
 </p>
 
 
