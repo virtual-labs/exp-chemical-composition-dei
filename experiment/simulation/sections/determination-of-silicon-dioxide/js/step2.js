@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the heating equipment (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
-        equipmentClickable.style.left = imgWidth * 0.83 + 'px'; // 60% from the left
-        equipmentClickable.style.top = imgHeight * 0.09 + 'px'; // 70% from the top
+        equipmentClickable.style.left = imgWidth * 0.79 + 'px'; // 79% from the left
+        equipmentClickable.style.top = imgHeight * 0.09 + 'px'; // 9% from the top
         equipmentClickable.style.width = imgWidth * 0.20 + 'px'; // 20% of image width
-        equipmentClickable.style.height = imgHeight * 0.23 + 'px'; // 20% of image height
+        equipmentClickable.style.height = imgHeight * 0.23 + 'px'; // 23% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';

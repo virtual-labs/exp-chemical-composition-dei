@@ -97,13 +97,13 @@ $$
 Rapid C₃A hydration (uncontrolled):
 
 $$
-\text{Ca}_3\text{Al}_2\text{O}_6 + 6\text{H}_2\text{O} \rightarrow \text{Ca}_3\text{Al}_2(\text{OH})_{12}
+\text{Ca}_{3}\text{Al}_{2}\text{O}_{6} + 6\text{H}_{2}\text{O} \rightarrow \text{Ca}_{3}\text{Al}_{2}(\text{OH})_{12}
 $$
 
 Controlled reaction with gypsum (ettringite formation):
 
 $$
-\text{C}_3\text{A} + 3(\text{CaSO}_4\cdot 2\text{H}_2\text{O}) + 26\text{H}_2\text{O} \rightarrow \text{C}_6\text{A}\bar{\text{S}}_3\text{H}_{32}
+\text{C}_{3}\text{A} + 3(\text{CaSO}_{4} \cdot 2\text{H}_{2}\text{O}) + 26\text{H}_{2}\text{O} \rightarrow \text{C}_{6}\text{A}\bar{\text{S}}_{3}\text{H}_{32}
 $$
 
 ---
@@ -117,7 +117,7 @@ $$
 **Key Reaction:**
 
 $$
-4\text{CaO} + \text{Al}_2\text{O}_3 + \text{Fe}_2\text{O}_3 \rightarrow \text{Ca}_4\text{Al}_2\text{Fe}_2\text{O}_{10}
+4\text{CaO} + \text{Al}_{2}\text{O}_{3} + \text{Fe}_{2}\text{O}_{3} \rightarrow \text{Ca}_{4}\text{Al}_{2}\text{Fe}_{2}\text{O}_{10}
 $$
 
 ---

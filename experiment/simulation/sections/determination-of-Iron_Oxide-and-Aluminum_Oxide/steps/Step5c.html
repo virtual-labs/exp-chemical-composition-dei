@@ -32,48 +32,67 @@
                     <div id="equipment-clickable" class="clickable-area"></div>
 
                     <!-- Arrow pointing to the clickable area -->
-                    <div id="click-arrow" class="click-arrow">👇</div>
+                    <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
                 </div>
             </div>
 
             <!-- Weighing results panel (initially hidden) -->
-            <div id="weighing-panel" class="weighing-panel hidden">
+ <div id="weighing-panel" class="weighing-panel hidden">
                 <h3>Weighing Results</h3>
-                <p class="instruction">The precipitate has been successfully weighed. Now click the "Calculate Iron
-                    Oxide (Fe₂O₃) %" button
-                    to determine the percentage of calcium oxide in the cement sample.</p>
-                <div class="action-button">
-                    <button id="calculate-button" class="calculate-btn">Calculate Fe₂O₃ %</button>
-                </div>
-            </div>
+                <div class="weighing-results">
+                    <div class="weighing-step">
+            <label>Volume of KMnO₄ used:</label>
+            <span id="measured-volume">20.0 mL</span>
+        </div>
+        <div class="weighing-step">
+            <label>Original cement sample mass:</label>
+            <span id="original-mass">1.0000 g</span>
+        </div>
+        <div class="weighing-step">
+            <label>Normality of KMnO₄:</label>
+            <span id="normality">0.1000 N</span>
+        </div>
+        <div class="weighing-step">
+            <label>Equivalent factor for Fe₂O₃:</label>
+            <span id="equivalent-factor">1.598</span>
+        </div>
+    </div>
+    <p class="instruction">
+        The titration reading has been recorded. Now calculate the percentage of iron oxide in the cement sample.
+    </p>
+    <div class="action-button">
+        <button id="calculate-button" class="calculate-btn">Calculate Fe₂O₃ %</button>
+    </div>
+</div>
 
-            <!-- Calculation interface (initially hidden) -->
-            <div id="calculation-panel" class="calculation-panel hidden">
-                <h3>Calculation Results</h3>
-                <div class="step-calculation result">
-                    <label>Fe₂O₃ % in cement (Sample 1):</label>
-                    <span id="Fe₂O₃-percentage">1.28%</span>
-                </div>
-                <div class="step-calculation result">
-                    <label>Fe₂O₃ % in cement (Sample 2):</label>
-                    <span id="Fe₂O₃-percentage">1.27%</span>
-                </div>
-                <div class="step-calculation result">
-                    <label>Fe₂O₃ % in cement (Sample 3):</label>
-                    <span id="Fe₂O₃-percentage">1.29%</span>
-                </div>
-                <br>
-                <div class="step-calculation result">
-                    <label>Average % Fe₂O₃ in cement:</label>
-                    <span id="Fe₂O₃-percentage">1.28%</span>
-                </div>
-                </d>
-                <div class="calculation-formula">
-                    <h4>Formula Used:</h4>
-                    <p>% Fe₂O₃ = (8* 0.1 * 1.598) * 100</p>
-                </div>
-            </div>
-
+<!-- Calculation interface (initially hidden) -->
+<div id="calculation-panel" class="calculation-panel hidden">
+    <h3>Calculation Results</h3>
+    <div class="calculation-steps">
+        
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 1):</label>
+            <span id="Fe2O3-percentage">3.196%</span>
+        </div>
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 2):</label>
+            <span id="Fe2O3-percentage">3.199%</span>
+        </div>
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 3):</label>
+            <span id="Fe2O3-percentage">3.201%</span>
+        </div>
+        <br>
+        <div class="step-calculation result">
+            <label>Average % Fe₂O₃ in cement:</label>
+            <span id="average-Fe2O3-percentage">3.199%</span>
+        </div>
+    </div>
+    <div class="calculation-formula">
+        <h4>Formula Used:</h4>
+        <p>% Fe₂O₃ = (Volume of KMnO₄ × Normality × 1.598 / Sample mass) × 100</p>
+    </div>
+</div>
             <div class="navigation">
                 <button id="prev-step">Back</button>
                 <button id="next-step" class="hidden">Complete Analysis</button>

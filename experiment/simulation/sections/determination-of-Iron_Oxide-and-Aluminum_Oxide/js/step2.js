@@ -1,9 +1,4 @@
 // JavaScript for Step 1: Addition of NH4OH to obtain aluminium hydroxide
-if (localStorage.getItem('step1Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '1');
-  alert('Please complete Step 1 before proceeding to Step 2.');
-  window.location.href = '../index.html';
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     // Get the static image, animation GIF, clickable area and arrow elements

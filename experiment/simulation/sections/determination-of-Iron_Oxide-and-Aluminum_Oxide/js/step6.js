@@ -1,9 +1,5 @@
 // JavaScript for Step 6
-if (localStorage.getItem('step5Completed') !== 'true') {
-  localStorage.setItem('blinkStep', '5');
-  alert('Please complete Step 5 before proceeding to Step 6.');
-  window.location.href = '../index.html';
-}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the static image, animation GIF, clickable area and arrow elements
     const staticImage = document.getElementById('static-image');
@@ -32,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Position clickable area over the hot plate (adjust these values based on 5.png)
         // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
-        equipmentClickable.style.left = imgWidth * 0.87 + 'px'; // 15% from the left
+        equipmentClickable.style.left = imgWidth * 0.86 + 'px'; // 15% from the left
         equipmentClickable.style.top = imgHeight * 0.05 + 'px'; // 20% from the top
         equipmentClickable.style.width = imgWidth * 0.15 + 'px'; // 25% of image width
         equipmentClickable.style.height = imgHeight * 0.40 + 'px'; // 40% of image height
