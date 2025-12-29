@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgHeight = staticImage.offsetHeight;
         
         // Position clickable area over the analytical balance
-        equipmentClickable.style.left = imgWidth * 0.715 + 'px';
+        equipmentClickable.style.left = imgWidth * 0.67 + 'px';
         equipmentClickable.style.top = imgHeight * 0.35 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.25 + 'px';

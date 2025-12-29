@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
-        alert('Fe₂O₃ determination analysis complete! The cement sample contains 1.28% Fe₂O₃.');
+        alert('Fe₂O₃ determination analysis complete! The cement sample contains 3.199% Fe₂O₃.');
         window.location.href = 'Step6.html';
     });
     

@@ -30,7 +30,7 @@
                     <div id="equipment-clickable" class="clickable-area"></div>
 
                     <!-- Arrow pointing to the clickable area -->
-                    <div id="click-arrow" class="click-arrow">👇</div>
+                    <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
                 </div>
             </div>
             <!-- Weighing results panel (initially hidden) -->
@@ -57,23 +57,25 @@
             <div id="calculation-panel" class="calculation-panel hidden">
                 <h3>Calculation Results</h3>
                 <div class="calculation-steps">
-                    <div class="step-calculation">
-                        <label>Mass of dried SiO₂ residue:</label>
-                        <span id="residue-mass">0.240 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Original cement sample mass:</label>
-                        <span id="sample-mass">1.0000 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Percentage calculation:</label>
-                        <span id="calculation-step">(0.240 / 1.0000) × 100</span>
-                    </div>
+                    
                     <div class="step-calculation result">
-                        <label>Percentage of SiO₂ in cement:</label>
-                        <span id="sio2-percentage">24.0%</span>
-                        <small>(0.240/1.0000 × 100)</small>
-                    </div>
+                    <label>SiO₂ % in cement (Sample 1):</label>
+                    <span id="SiO₂-percentage">24%</span>
+                </div>
+                <div class="step-calculation result">
+                    <label>SiO₂ % in cement (Sample 2):</label>
+                    <span id="SiO₂-percentage">23.6%</span>
+                </div>
+                <div class="step-calculation result">
+                    <label>SiO₂ % in cement (Sample 3):</label>
+                    <span id="SiO₂-percentage">23.9%</span>
+                </div>
+                <br>
+                <div class="step-calculation result">
+                    <label>Average % SiO₂ in cement:</label>
+                    <span id="average-SiO₂-percentage">23.833%</span>
+                </div>
+                    
                 </div>
                 <div class="calculation-formula">
                     <h4>Formula Used:</h4>

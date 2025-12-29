@@ -30,7 +30,7 @@
                     <div id="equipment-clickable" class="clickable-area"></div>
 
                     <!-- Arrow pointing to the clickable area -->
-                    <div id="click-arrow" class="click-arrow">👇</div>
+                    <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
                 </div>
             </div>
 
@@ -47,34 +47,31 @@
                         <span id="original-mass">1.0000 g</span>
                     </div>
                 </div>
-                <p class="instruction">The precipitate has been successfully weighed. Now click the "Calculate CaO %"
-                    button to determine the percentage of calcium oxide in the cement sample.</p>
+                <p class="instruction">The precipitate has been successfully weighed. Now Calculate CaO %</p>
                 <div class="action-button">
                     <button id="calculate-button" class="calculate-btn">Calculate CaO %</button>
                 </div>
             </div>
-
             <!-- Calculation interface (initially hidden) -->
             <div id="calculation-panel" class="calculation-panel hidden">
                 <h3>Calculation Results</h3>
                 <div class="calculation-steps">
-                    <div class="step-calculation">
-                        <label>Mass of dried precipitate (CaC₂O₄):</label>
-                        <span id="precipitate-mass">1.141 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Original cement sample mass:</label>
-                        <span id="sample-mass">1.0000 g</span>
-                    </div>
-                    <div class="step-calculation">
-                        <label>Mass of CaO equivalent:</label>
-                        <span id="cao-mass">0.6396 g</span>
-                        <small>(1.141 × 0.5608)</small>
+                    <div class="step-calculation result">
+                        <label>CaO % in cement (Sample 1):</label>
+                        <span id="CaO-percentage">63.93%</span>
                     </div>
                     <div class="step-calculation result">
-                        <label>Percentage of CaO in cement:</label>
-                        <span id="cao-percentage">63.96%</span>
-                        <small>(0.6396/1.0000 × 100)</small>
+                        <label>CaO % in cement (Sample 2):</label>
+                        <span id="CaO-percentage">63.92%</span>
+                    </div>
+                    <div class="step-calculation result">
+                        <label>CaO % in cement (Sample 3):</label>
+                        <span id="CaO-percentage">63.98%</span>
+                    </div>
+                    <br>
+                    <div class="step-calculation result">
+                        <label>Average % CaO in cement:</label>
+                        <span id="average-CaO-percentage">63.94%</span>
                     </div>
                 </div>
                 <div class="calculation-formula">
@@ -82,12 +79,11 @@
                     <p>% CaO = (Mass of precipitate × 0.5608 / Original sample mass) × 100</p>
                 </div>
             </div>
-
-            <div class="navigation">
-                <button id="prev-step">Back</button>
-                <button id="next-step" class="hidden">Complete Analysis</button>
-            </div>
+        <div class="navigation">
+            <button id="prev-step">Back</button>
+            <button id="next-step" class="hidden">Complete Analysis</button>
         </div>
+    </div>
 
     </div>
 

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgHeight = staticImage.offsetHeight;
         
         // Position clickable area over the analytical balance
-        equipmentClickable.style.left = imgWidth * 0.715 + 'px';
+        equipmentClickable.style.left = imgWidth * 0.67 + 'px';
         equipmentClickable.style.top = imgHeight * 0.30 + 'px';
         equipmentClickable.style.width = imgWidth * 0.15 + 'px';
         equipmentClickable.style.height = imgHeight * 0.25 + 'px';
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener for next-step button
     nextStepButton.addEventListener('click', function() {
         // Navigate back to the main determination section or show completion message
-        alert('Magnesium oxide determination analysis complete! The cement sample contains 0.72% MgO.');
+        alert('Magnesium oxide determination analysis complete! The cement sample contains 0.723% MgO.');
         window.location.href = '../../sections.html';
     });
     
