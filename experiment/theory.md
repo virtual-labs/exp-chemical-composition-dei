@@ -96,11 +96,15 @@ $$
 
 Rapid C₃A hydration (uncontrolled):
 
-$\text{Ca}_{3}\text{Al}_{2}\text{O}_{6} + 6\text{H}_{2}\text{O} \rightarrow \text{Ca}_{3}\text{Al}_{2}(\text{OH})_{12}$
+<p align="center">
+  <img src="images/1.PNG" alt="Equation" height = 30>
+</p>
 
 Controlled reaction with gypsum (ettringite formation):
 
-$\text{C}_{3}\text{A} + 3(\text{CaSO}_{4} \cdot 2\text{H}_{2}\text{O}) + 26\text{H}_{2}\text{O} \rightarrow \text{C}_{6}\text{A}\bar{\text{S}}_{3}\text{H}_{32}$
+<p align="center">
+  <img src="images/2.PNG" alt="Equation" height = 30>
+</p>
 
 
 ### 4. Iron Oxide (Fe₂O₃)
@@ -111,7 +115,9 @@ $\text{C}_{3}\text{A} + 3(\text{CaSO}_{4} \cdot 2\text{H}_{2}\text{O}) + 26\text
 
 **Key Reaction:**
 
-$4\text{CaO} + \text{Al}_{2}\text{O}_{3} + \text{Fe}_{2}\text{O}_{3} \rightarrow 4\text{CaO} \cdot \text{Al}_{2}\text{O}_{3} \cdot \text{Fe}_{2}\text{O}_{3}$
+<p align="center">
+  <img src="images/3.PNG" alt="Equation" height = 30>
+</p>
 
 
 ### 5. Magnesium Oxide (MgO)
