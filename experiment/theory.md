@@ -9,7 +9,7 @@
 </script>
 
 
-## Theory
+### Introduction
 
 Cement is a key ingredient in the construction industry due to its ability to bind materials together, contributing to the strength and durability of concrete structures. Its primary chemical components include calcium, silicon, aluminum, iron, and other minor elements. The determination of these components provides essential information about the cement's quality, which affects its performance in construction applications. The chemical composition of cement directly influences critical properties such as strength, workability, setting time, and durability.
 
@@ -94,30 +94,12 @@ $$
 \text{Al}_2\text{O}_3 + 3\text{CaO} + 6\text{H}_2\text{O} \rightarrow \text{C}_3\text{AH}_6 + \text{Heat}
 $$
 
-Rapid C₃A hydration (uncontrolled):
-
-<p align="center">
-  <img src="images/1.PNG" alt="Equation" height = 50px>
-</p>
-
-Controlled reaction with gypsum (ettringite formation):
-
-<p align="center">
-  <img src="images/2.PNG" alt="Equation" height = 50px>
-</p>
-
 
 ### 4. Iron Oxide (Fe₂O₃)
 
 - Typically 0.5--6% by mass.
 - Forms tetracalcium aluminoferrite ($\text{C}_4\text{AF}$).
 - Reduces early heat of hydration and acts as a flux.
-
-**Key Reaction:**
-
-<p align="center">
-  <img src="images/3.PNG" alt="Equation" height = 50px>
-</p>
 
 
 ### 5. Magnesium Oxide (MgO)
