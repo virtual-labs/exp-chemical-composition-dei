@@ -1,0 +1,215 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which oxide primarily contributes to early strength development in cement?",
+      "answers": {
+          "a": "$\\text{Fe}_2\\text{O}_3$",
+          "b": "$\\text{C}_3\\text{A}$",
+          "c": "$\\text{MgO}$",
+          "d": "$\\text{CaO}$"
+      },
+      "explanations": {
+          "b": "$\\text{C}_3\\text{A}$ (Tricalcium Aluminate) reacts quickly with water, contributing to early strength development in cement."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the function of gypsum in cement?",
+      "answers": {
+        "a": "Increases strength",
+        "b": "Prevents flash setting",
+        "c": "Reduces heat of hydration",
+        "d": "Improves workability"
+      },
+      "explanations": {
+        "b": "Gypsum regulates the setting time of cement by preventing flash setting caused by rapid hydration of C₃A."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is silica (SiO₂) important in cement composition?",
+      "answers": {
+        "a": "Enhances early strength",
+        "b": "Reduces setting time",
+        "c": "Improves long-term strength and durability",
+        "d": "Prevents sulfate attack"
+      },
+      "explanations": {
+        "c": "SiO₂ contributes to the formation of C-S-H gel, which is essential for long-term strength and durability of cement."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the impact of excessive alkalis in cement?",
+      "answers": {
+        "a": "Increases durability",
+        "b": "Causes alkali-silica reaction (ASR) leading to cracking",
+        "c": "Enhances setting time",
+        "d": "Reduces workability"
+      },
+      "explanations": {
+        "b": "Excess alkalis (Na₂O, K₂O) react with silica in aggregates, causing expansion and cracking due to ASR."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the approximate percentage of CaO in cement?",
+      "answers": {
+        "a": "20-30%",
+        "b": "50-60%",
+        "c": "70-80%",
+        "d": "10-20%"
+      },
+      "explanations": {
+        "b": "CaO (Lime) makes up 50-60% of cement composition and plays a crucial role in strength development."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the role of Fe₂O₃ in cement?",
+      "answers": {
+        "a": "Enhances workability and color",
+        "b": "Increases early strength",
+        "c": "Reduces setting time",
+        "d": "Prevents sulfate attack"
+      },
+      "explanations": {
+        "a": "Fe₂O₃ (Iron Oxide) imparts color to cement and aids in the formation of clinker, improving workability."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the significance of controlling SO₃ content in cement?",
+      "answers": {
+        "a": "Prevents flash setting and sulfate attack",
+        "b": "Enhances early strength",
+        "c": "Reduces hydration rate",
+        "d": "Improves color"
+      },
+      "explanations": {
+        "a": "SO₃ (Sulfur Trioxide) regulates the setting time and prevents sulfate attack in cement."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What method is used to determine MgO content in cement?",
+      "answers": {
+        "a": "Volumetric titration",
+        "b": "Precipitation as magnesium ammonium phosphate",
+        "c": "Gravimetric analysis",
+        "d": "Atomic absorption spectroscopy"
+      },
+      "explanations": {
+        "b": "MgO content is determined by precipitating magnesium as magnesium ammonium phosphate, which is later analyzed."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the ideal temperature range for cement hydration?",
+      "answers": {
+        "a": "20-30°C",
+        "b": "50-60°C",
+        "c": "10-20°C",
+        "d": "40-50°C"
+      },
+      "explanations": {
+        "a": "Hydration of cement occurs optimally at 20-30°C, ensuring proper strength development."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which oxide in cement helps prevent sulfate attack?",
+      "answers": {
+        "a": "Fe₂O₃",
+        "b": "Al₂O₃",
+        "c": "CaO",
+        "d": "SiO₂"
+      },
+      "explanations": {
+        "b": "Al₂O₃ (Alumina) reacts to form stable compounds that help resist sulfate attack in cement."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which test is commonly used to determine cement fineness?",
+      "answers": {
+        "a": "Soundness test",
+        "b": "Blaine air permeability test",
+        "c": "Vicat needle test",
+        "d": "Le Chatelier test"
+      },
+      "explanations": {
+        "b": "The Blaine air permeability test measures the specific surface area of cement to determine fineness."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the typical range of SO₃ content in cement?",
+      "answers": {
+        "a": "0-1%",
+        "b": "2-4%",
+        "c": "5-6%",
+        "d": "7-9%"
+      },
+      "explanations": {
+        "b": "SO₃ content in cement is typically 2-4%, which helps regulate setting time and prevent flash setting."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the main reason for using sulfate-resistant cement in marine structures?",
+      "answers": {
+        "a": "High Al₂O₃ content",
+        "b": "Low C₃A content",
+        "c": "High Fe₂O₃ content",
+        "d": "Low MgO content"
+      },
+      "explanations": {
+        "b": "Low C₃A content reduces the risk of sulfate attack, making sulfate-resistant cement suitable for marine structures."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What happens if the cement hydration heat is too high?",
+      "answers": {
+        "a": "Increases durability",
+        "b": "Reduces sulfate resistance",
+        "c": "Causes thermal cracking",
+        "d": "Improves strength"
+      },
+      "explanations": {
+        "c": "Excessive heat during hydration can lead to thermal stresses, causing cracks in concrete structures."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the preferred method for analyzing cement composition in modern laboratories?",
+      "answers": {
+        "a": "X-ray fluorescence (XRF)",
+        "b": "Colorimetric analysis",
+        "c": "Atomic absorption spectroscopy",
+        "d": "Titration"
+      },
+      "explanations": {
+        "a": "X-ray fluorescence (XRF) is widely used for cement analysis as it provides accurate elemental composition data."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}
