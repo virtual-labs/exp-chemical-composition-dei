@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the funnel (adjust these values based on 6.png)
         // These are approximate values - you'll need to adjust them based on where the funnel is in your image
-        equipmentClickable.style.left = imgWidth * 0.48+ 'px'; // 35% from the left
-        equipmentClickable.style.top = imgHeight * 0.020 + 'px'; // 25% from the top
-        equipmentClickable.style.width = imgWidth * 0.13 + 'px'; // 20% of image width
-        equipmentClickable.style.height = imgHeight * 0.20 + 'px'; // 25% of image height
+        equipmentClickable.style.left = imgWidth * 0.43 + 'px'; // 43% from the left
+        equipmentClickable.style.top = imgHeight * 0.020 + 'px'; // 2% from the top
+        equipmentClickable.style.width = imgWidth * 0.13 + 'px'; // 13% of image width
+        equipmentClickable.style.height = imgHeight * 0.20 + 'px'; // 20% of image height
         
         // Position the arrow to point to the clickable area
         clickArrow.style.left = (parseFloat(equipmentClickable.style.left) + parseFloat(equipmentClickable.style.width)/2) + 'px';

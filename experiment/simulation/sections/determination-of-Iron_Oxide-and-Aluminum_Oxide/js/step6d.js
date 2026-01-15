@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the hot plate (adjust these values based on 5.png)
         // These are approximate values - you'll need to adjust them based on where the hot plate is in your image
-        equipmentClickable.style.left = imgWidth * 0.55 + 'px'; // 15% from the left
+        equipmentClickable.style.left = imgWidth * 0.53 + 'px'; // 15% from the left
         equipmentClickable.style.top = imgHeight * 0.50 + 'px'; // 60% from the top
         equipmentClickable.style.width = imgWidth * 0.05 + 'px'; // 25% of image width
         equipmentClickable.style.height = imgHeight * 0.05 + 'px'; // 15% of image height
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationGif.classList.remove('hidden');
         
         // Calculate the duration of the GIF (adjust this based on your actual GIF duration)
-        const gifDuration = 3000; // 8 seconds - longer duration for complete heating and dissolution process
+        const gifDuration = 0; // 8 seconds - longer duration for complete heating and dissolution process
         
         // After the GIF animation completes, show the next step button
         setTimeout(function() {
