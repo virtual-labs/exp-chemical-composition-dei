@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Determination of Iron Oxide and Aluminium Oxide </title>
+</head>
+
+<body>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical composition of cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">6</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep3e">
+                   Weigh the dried precipitate and use the titration data to calculate the percentage of <br>aluminium oxide (Al₂O₃) present in the cement sample.
+                </p>
+            </div>
+        <div class="step-image">
+            <div class="image-container">
+                <img id="static-image" src="../images/6f.PNG" alt="Weighing the Dried Precipitate">
+                <img id="animation-gif" class="hidden" src="../images/6f.gif" alt="Weighing and Calculation Animation">
+                
+                <!-- Transparent clickable area positioned over the analytical balance -->
+                <div id="equipment-clickable" class="clickable-area"></div>
+                
+                <!-- Arrow pointing to the clickable area -->
+                <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
+            </div>
+        </div>
+
+        <!-- Weighing results panel (initially hidden) -->
+        <div id="weighing-panel" class="weighing-panel hidden">
+            <h3>Weighing Results</h3>
+            <div class="weighing-results">
+                <div class="weighing-step">
+                    <label>Mass of dried precipitate (Al₂O₃):</label>
+                    <span id="measured-mass">0.080 g</span>
+                </div>
+                <div class="weighing-step">
+                    <label>Original cement sample mass:</label>
+                    <span id="original-mass">1.0000 g</span>
+                </div>
+            </div>
+            <p class="instruction">The precipitate has been successfully weighed. Now Calculate Al₂O₃ %</p>
+            <div class="action-button">
+                <button id="calculate-button" class="calculate-btn">Calculate Al₂O₃ %</button>
+            </div>
+        </div>
+
+                <!-- Calculation interface (initially hidden) -->
+        <div id="calculation-panel" class="calculation-panel hidden">
+            <h3>Calculation Results</h3>
+            <div class="calculation-steps">
+               <div class="step-calculation result">
+                    <label>Al₂O₃ % in cement (Sample 1):</label>
+                    <span id="Al₂O₃-percentage">8.01%</span>
+                </div>
+                <div class="step-calculation result">
+                    <label>Al₂O₃ % in cement (Sample 2):</label>
+                    <span id="Al₂O₃-percentage">7.98%</span>
+                </div>
+                <div class="step-calculation result">
+                    <label>Al₂O₃ % in cement (Sample 3):</label>
+                    <span id="Al₂O₃-percentage">8.02%</span>
+                </div>
+                <br>
+                <div class="step-calculation result">
+                    <label>Average % Al₂O₃ in cement:</label>
+                    <span id="average-Al₂O₃-percentage">8.00%</span>
+                </div>
+            </div>
+            <div class="calculation-formula">
+                <h4>Formula Used:</h4>
+                <p>% Al₂O₃ = (0.080/1) × 100</p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prev-step">Back</button>
+            <button id="next-step" class="hidden">Complete Analysis</button>
+        </div>
+    </div>
+
+    <script src="../js/step6f.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* CSS for Step 4 of the Chemical Composition of Cement experiment */
+
+.step-header {
+    background-color: #0088ff;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.step-image {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.step-image img {
+    max-width: 90%;
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.clickable-area {
+    position: absolute;
+    cursor: pointer;
+}
+
+.click-arrow {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #1475e4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    /* font-size: 1em; */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navigation button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+/* Wrapper to center the step box */
+.step-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Light blue box for the entire step */
+.step-box {
+    background-color: #d3e9f2;
+    padding: 20px;
+}
+
+/* Heading bar inside the box */
+.step-heading-bar {
+    background-color: #0088ff;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.step{
+    display: inline-block;
+}
+
+.statement{
+    margin-top: -25px;
+}
+
+.step-number{
+    background-color: rgb(20, 117, 228);
+    color: white;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.instructions{
+    position: absolute;
+    display: inline;
+    text-align: justify;
+    font-size: 18px;
+}

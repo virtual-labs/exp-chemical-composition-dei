@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Determination of Iron Oxide and Aluminium Oxide</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical composition of cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">1</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep1">
+                    To another portion of the filtrate, add ammonium hydroxide (NH₄OH) until a <br> precipitate forms.
+                </p>
+            </div>
+
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/1.png" alt="Chemical Analysis of Cement Sample">
+                    <img id="animation-gif" class="hidden" src="../images/1.gif" alt="Chemical Analysis Animation">
+
+                    <!-- Transparent clickable area positioned over the sample -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/step1.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+}
+
+.content {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+/* Unified experiment box */
+.experiment-box {
+    background-color: #d3e9f2;
+}
+
+.container1 {
+    padding: 15px;
+}
+
+/* Heading bar inside the box */
+.experiment-box .box-heading {
+    background-color: #008cff;   /* Same as Heat of Hydration heading */
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Sections inside the box */
+.objective,
+.instruments {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+}
+
+.objective h3,
+.instruments h3 {
+    margin: 0 6px 0 0;
+    display: inline;
+}
+
+.objective p,
+.instruments p {
+    display: inline;
+    margin: 0;
+}
+
+/* Tools image styling */
+.tools-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tools-image {
+    max-width: 90%;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+/* Start button aligned inside the box */
+.start-button {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#start-experiment {
+    background-color: #1475e4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    /* font-size: 1em; */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#start-experiment:hover {
+    background-color: #0066cc;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .content,.step-wrapper {
+    zoom: 40%;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+/* SMALL DEVICES */
+@media (min-width: 576px) and (max-width: 767px) {
+  .content,.step-wrapper {
+    zoom: 65%;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+  .content,.step-wrapper {
+    zoom: 80%;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+/* SMALL DESKTOP */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content,.step-wrapper {
+    zoom: 90%;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+/* LANDSCAPE FIX */
+@media (max-width: 767px) and (orientation: landscape) {
+  .content,.step-wrapper {
+    zoom: 55%;
+  }
+}
+
+/* SAFETY */
+body {
+  overflow-x: hidden;
+}
