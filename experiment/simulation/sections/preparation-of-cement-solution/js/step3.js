@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the sample transfer area (adjust these values based on 3.png)
         // These are approximate values - you'll need to adjust them based on where the sample/beaker is in your image
-        equipmentClickable.style.left = imgWidth * 0.66 + 'px'; // 66% from the left
-        equipmentClickable.style.top = imgHeight * 0.55 + 'px'; // 55% from the top
+        equipmentClickable.style.left = imgWidth * 0.60 + 'px'; // 60% from the left
+        equipmentClickable.style.top = imgHeight * 0.60 + 'px'; // 60% from the top
         equipmentClickable.style.width = imgWidth * 0.2 + 'px'; // 20% of image width
         equipmentClickable.style.height = imgHeight * 0.2 + 'px'; // 20% of image height
         

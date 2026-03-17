@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the analytical equipment (adjust these values based on 2.png)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
-        equipmentClickable.style.left = imgWidth * 0.73 + 'px'; // 30% from the left
+        equipmentClickable.style.left = imgWidth * 0.70 + 'px'; // 30% from the left
         equipmentClickable.style.top = imgHeight * 0.62 + 'px'; // 40% from the top
         equipmentClickable.style.width = imgWidth * 0.2 + 'px'; // 30% of image width
         equipmentClickable.style.height = imgHeight * 0.2 + 'px'; // 30% of image height

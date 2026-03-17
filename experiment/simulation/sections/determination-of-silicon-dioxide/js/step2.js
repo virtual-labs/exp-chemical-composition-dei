@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Position clickable area over the heating equipment (adjust these values as needed)
         // These are approximate values - you'll need to adjust them based on where the equipment is in your image
-        equipmentClickable.style.left = imgWidth * 0.79 + 'px'; // 79% from the left
-        equipmentClickable.style.top = imgHeight * 0.09 + 'px'; // 9% from the top
+        equipmentClickable.style.left = imgWidth * 0.22 + 'px'; // 79% from the left
+        equipmentClickable.style.top = imgHeight * 0.50 + 'px'; // 9% from the top
         equipmentClickable.style.width = imgWidth * 0.20 + 'px'; // 20% of image width
         equipmentClickable.style.height = imgHeight * 0.23 + 'px'; // 23% of image height
         
