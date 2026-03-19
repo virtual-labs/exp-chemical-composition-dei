@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Determination of Iron Oxide and Aluminium Oxide </title>
+</head>
+
+<body>
+    <div class="step-wrapper">
+        <div class="step-heading-bar">Chemical composition of cement</div>
+        <div class="step-box">
+            <div class="statement" id="statement">
+                <h3 class="step">
+                    Step <span class="step-number">5</span>:
+                </h3>
+                <p class="instructions" id="instructionsStep3e">
+                    The titration is continued until a permanent light pink colour appears, indicating <br> the end
+                    point.
+                    KMnO₄ volume is noted to determine Fe₂O₃% in cement sample.
+                </p>
+            </div>
+
+            <div class="step-image">
+                <div class="image-container">
+                    <img id="static-image" src="../images/5c.jpg"
+                        alt="After Filtration and Drying of Iron Oxide Precipitate">
+                    <img id="animation-gif" class="hidden" src="../images/5c.jpg" alt="Weighing Animation">
+
+                    <!-- Transparent clickable area positioned over the analytical balance -->
+                    <div id="equipment-clickable" class="clickable-area"></div>
+
+                    <!-- Arrow pointing to the clickable area -->
+                    <div id="click-arrow" class="click-arrow"><img src="../images/arrow.gif" alt="arrow"></div>
+                </div>
+            </div>
+
+            <!-- Weighing results panel (initially hidden) -->
+ <div id="weighing-panel" class="weighing-panel hidden">
+                <h3>Weighing Results</h3>
+                <div class="weighing-results">
+                    <div class="weighing-step">
+            <label>Volume of KMnO₄ used:</label>
+            <span id="measured-volume">20.0 mL</span>
+        </div>
+        <div class="weighing-step">
+            <label>Original cement sample mass:</label>
+            <span id="original-mass">1.0000 g</span>
+        </div>
+        <div class="weighing-step">
+            <label>Normality of KMnO₄:</label>
+            <span id="normality">0.1000 N</span>
+        </div>
+        <div class="weighing-step">
+            <label>Equivalent factor for Fe₂O₃:</label>
+            <span id="equivalent-factor">1.598</span>
+        </div>
+    </div>
+    <p class="instruction">
+        The titration reading has been recorded. Now calculate the percentage of iron oxide in the cement sample.
+    </p>
+    <div class="action-button">
+        <button id="calculate-button" class="calculate-btn">Calculate Fe₂O₃ %</button>
+    </div>
+</div>
+
+<!-- Calculation interface (initially hidden) -->
+<div id="calculation-panel" class="calculation-panel hidden">
+    <h3>Calculation Results</h3>
+    <div class="calculation-steps">
+        
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 1):</label>
+            <span id="Fe2O3-percentage">3.196%</span>
+        </div>
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 2):</label>
+            <span id="Fe2O3-percentage">3.199%</span>
+        </div>
+        <div class="step-calculation result">
+            <label>Fe₂O₃ % in cement (Sample 3):</label>
+            <span id="Fe2O3-percentage">3.201%</span>
+        </div>
+        <br>
+        <div class="step-calculation result">
+            <label>Average % Fe₂O₃ in cement:</label>
+            <span id="average-Fe2O3-percentage">3.199%</span>
+        </div>
+    </div>
+    <div class="calculation-formula">
+        <h4>Formula Used:</h4>
+        <p>% Fe₂O₃ = (Volume of KMnO₄ × Normality × 1.598 / Sample mass) × 100</p>
+    </div>
+</div>
+            <div class="navigation">
+                <button id="prev-step">Back</button>
+                <button id="next-step" class="hidden">Complete Analysis</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/step5c.js"></script>
+</body>
+
+</html>

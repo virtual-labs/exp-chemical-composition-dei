@@ -4,13 +4,13 @@
     {
       "question": "Which oxide in cement is primarily responsible for strength development?",
       "answers": {
-        "a": "Fe₂O₃",
-        "b": "Al₂O₃",
-        "c": "CaO",
-        "d": "MgO"
+          "a": "$\\text{Fe}_2\\text{O}_3$",
+          "b": "$\\text{Al}_2\\text{O}_3$",
+          "c": "$\\text{CaO}$",
+          "d": "$\\text{MgO}$"
       },
       "explanations": {
-        "c": "Calcium oxide (CaO) reacts with water to form hydration compounds responsible for strength development in cement."
+          "c": "Calcium oxide ($\\text{CaO}$) reacts with water to form hydration compounds responsible for strength development in cement."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -24,7 +24,7 @@
         "d": "Improves color"
       },
       "explanations": {
-        "b": "SO₃ (Sulfur Trioxide) helps prevent flash setting, which occurs due to the rapid hydration of C₃A (Tricalcium Aluminate)."
+        "b": "$\\text{SO}_3$ (Sulfur Trioxide) helps prevent flash setting, which occurs due to the rapid hydration of $\\text{C}_3\\text{A}$ (Tricalcium Aluminate)."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -32,13 +32,13 @@
     {
       "question": "Which oxide in cement contributes to early strength and lowers clinkering temperature?",
       "answers": {
-        "a": "SiO₂",
-        "b": "Al₂O₃",
-        "c": "Fe₂O₃",
-        "d": "MgO"
+          "a": "$\\text{SiO}_2$",
+          "b": "$\\text{Al}_2\\text{O}_3$",
+          "c": "$\\text{Fe}_2\\text{O}_3$",
+          "d": "$\\text{MgO}$"
       },
       "explanations": {
-        "b": "Al₂O₃ (Alumina) reduces the clinkering temperature and promotes early strength development in cement."
+          "b": "$\\text{Al}_2\\text{O}_3$ (Alumina) reduces the clinkering temperature and promotes early strength development in cement."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -46,13 +46,13 @@
     {
       "question": "Which oxide helps in preventing alkali-silica reaction (ASR)?",
       "answers": {
-        "a": "Na₂O",
-        "b": "K₂O",
-        "c": "SO₃",
+          "a": "$\\text{Na}_2\\text{O}$",
+          "b": "$\\text{K}_2\\text{O}$",
+          "c": "$\\text{SO}_3$",
         "d": "Both a & b"
       },
       "explanations": {
-        "d": "Na₂O and K₂O (alkali oxides) react with silica in aggregates, causing ASR. Controlling their content prevents this reaction."
+          "d": "$\\text{Na}_2\\text{O}$ and $\\text{K}_2\\text{O}$ (alkali oxides) react with silica in aggregates, causing ASR. Controlling their content prevents this reaction."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -66,13 +66,13 @@
         "d": "Prevents expansion"
       },
       "explanations": {
-        "c": "Fe₂O₃ (Iron Oxide) helps in clinker formation and gives cement its characteristic gray color."
+        "c": "$\\text{Fe}_2\\text{O}_3$ (Iron Oxide) helps in clinker formation and gives cement its characteristic gray color."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the purpose of adding ammonium oxalate ((NH₄)₂C₂O₄) during the determination of CaO?",
+      "question": "What is the purpose of adding ammonium oxalate ($(\\text{NH}_4)_2\\text{C}_2\\text{O}_4$) during the determination of $\\text{CaO}$?",
       "answers": {
         "a": "To precipitate calcium oxalate",
         "b": "To dissolve calcium",
@@ -80,13 +80,13 @@
         "d": "To neutralize the solution"
       },
       "explanations": {
-        "a": "Ammonium oxalate is used to precipitate calcium as calcium oxalate, which is further analyzed for CaO content."
+        "a": "Ammonium oxalate is used to precipitate calcium as calcium oxalate, which is further analyzed for $\\text{CaO}$ content."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
     },
     {
-      "question": "Why is nitric acid (HNO₃) used in the determination of SiO₂ in cement?",
+      "question": "Why is nitric acid ($\\text{HNO}_3$) used in the determination of $\\text{SiO}_2$ in cement?",
       "answers": {
         "a": "To dissolve calcium oxide",
         "b": "To enhance filtration",
@@ -94,7 +94,7 @@
         "d": "To precipitate iron oxide"
       },
       "explanations": {
-        "c": "Nitric acid acidifies the solution and helps convert silica (SiO₂) into an insoluble form for precise determination."
+        "c": "Nitric acid acidifies the solution and helps convert silica ($\\text{SiO}_2$) into an insoluble form for precise determination."
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -102,13 +102,13 @@
     {
       "question": "What is the key method for determining the percentage of Fe₂O₃ in cement?",
       "answers": {
-        "a": "Titration using KMnO₄",
+        "a": "Titration using $\\text{KMnO}_4$",
         "b": "Gravimetric analysis",
         "c": "Filtration and drying",
         "d": "Spectrophotometry"
       },
       "explanations": {
-        "a": "Titration using KMnO₄ (Potassium Permanganate) is commonly used for Fe₂O₃ determination due to its oxidizing properties."
+        "a": "Titration using $\\text{KMnO}_4$ (Potassium Permanganate) is commonly used for $\\text{Fe}_2\\text{O}_3$ determination due to its oxidizing properties."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -117,18 +117,18 @@
       "question": "What compound is precipitated to determine the MgO content in cement?",
       "answers": {
         "a": "Magnesium hydroxide",
-        "b": "Magnesium ammonium phosphate (MgNH₄PO₄)",
+        "b": "Magnesium ammonium phosphate ($\\text{MgNH}_4\\text{PO}_4$)",
         "c": "Magnesium sulfate",
         "d": "Magnesium carbonate"
       },
       "explanations": {
-        "b": "Magnesium ammonium phosphate (MgNH₄PO₄) is the compound formed and precipitated for MgO content determination."
+        "b": "Magnesium ammonium phosphate ($\\text{MgNH}_4\\text{PO}_4$) is the compound formed and precipitated for $\\text{MgO}$ content determination."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "What is the function of tetracalcium aluminoferrite (C₄AF) in cement?",
+      "question": "What is the function of tetracalcium aluminoferrite ($\\text{C}_4\\text{AF}$) in cement?",
       "answers": {
         "a": "Increases strength significantly",
         "b": "Improves workability but contributes minimal strength",
@@ -136,7 +136,7 @@
         "d": "Prevents sulfate attack"
       },
       "explanations": {
-        "b": "C₄AF (Tetracalcium Aluminoferrite) mainly improves workability and has a minor role in strength development."
+        "b": "$\\text{C}_4\\text{AF}$ (Tetracalcium Aluminoferrite) mainly improves workability and has a minor role in strength development."
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
